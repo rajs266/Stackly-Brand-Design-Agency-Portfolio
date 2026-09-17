@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Studio | Stackly - Brand Design Agency</title>
+    <link rel="icon" href="assets/top-logo.webp" type="image/webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo" title="Stackly Home">
+                <img src="assets/logo.webp" alt="Stackly Studio">
+            </a>
+
+            <nav class="nav-links-wrap">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+            <div class="nav-cta-actions">
+                <a href="signin.html" class="btn btn-outline" style="padding: 8px 18px; font-size: 0.85rem;">Sign In</a>
+                <a href="get-started.html" class="btn btn-accent" style="padding: 8px 20px; font-size: 0.85rem;">Get Started</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="mobile-drawer-header">
+            <a href="index.html" class="brand-logo" title="Stackly Studio Home">
+                <img src="assets/logo.webp" alt="Stackly Studio">
+            </a>
+            <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Mobile Menu"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="mobile-drawer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="mobile-drawer-actions">
+            <a href="signin.html" class="btn btn-outline btn-block">Sign In</a>
+            <a href="get-started.html" class="btn btn-accent btn-block">Get Started</a>
+        </div>
+    </div>
+
+    <section class="page-hero-banner hero-bg-contact">
+        <div class="container anim-slide-up">
+            <span class="page-hero-eyebrow"><i class="fas fa-sparkles"></i> START THE CONVERSATION &bull; SPRINT INQUIRIES</span>
+            <h1 class="page-hero-title">
+                Let’s Architect Your Next <span>Category-Defining Brand</span>
+            </h1>
+            <p class="page-hero-subtitle">
+                Whether you are launching a stealth venture or revitalizing an established enterprise, our founding partners review every inquiry personally within 24 hours.
+            </p>
+            <div class="page-hero-stats-row">
+                <div class="page-hero-stat-item">
+                    <span class="page-hero-stat-value">&lt; 4 Hrs</span>
+                    <span class="page-hero-stat-label">Response Guarantee</span>
+                </div>
+                <div class="page-hero-stat-item">
+                    <span class="page-hero-stat-value">Direct</span>
+                    <span class="page-hero-stat-label">Partner Evaluation</span>
+                </div>
+                <div class="page-hero-stat-item">
+                    <span class="page-hero-stat-value">100%</span>
+                    <span class="page-hero-stat-label">Strict NDA Protection</span>
+                </div>
+                <div class="page-hero-stat-item">
+                    <span class="page-hero-stat-value">Q4 Open</span>
+                    <span class="page-hero-stat-label">Selective Intake</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="agency-marquee-section">
+        <div class="agency-marquee-track">
+            <div class="marquee-brand-item"><i class="fas fa-shield-halved"></i> 100% MUTUAL NDA COMMITMENT <span class="marquee-pill">STRICT</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-user-tie"></i> DIRECT FOUNDING PARTNER REVIEW <span class="marquee-pill">SENIOR</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-clock"></i> 4-HOUR INITIAL EVALUATION <span class="marquee-pill">RAPID</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-globe"></i> GLOBAL TIME ZONE SYNCHRONIZED <span class="marquee-pill">24/7</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-file-contract"></i> FIXED-PRICE SPRINT PROPOSALS <span class="marquee-pill">NO SURPRISES</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-flask"></i> SALEM CRAFT LAB ACCESS <span class="marquee-pill">PROTOTYPES</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-comments"></i> DEDICATED SLACK &amp; DASHBOARD <span class="marquee-pill">PORTAL</span></div>
+
+            <div class="marquee-brand-item"><i class="fas fa-shield-halved"></i> 100% MUTUAL NDA COMMITMENT <span class="marquee-pill">STRICT</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-user-tie"></i> DIRECT FOUNDING PARTNER REVIEW <span class="marquee-pill">SENIOR</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-clock"></i> 4-HOUR INITIAL EVALUATION <span class="marquee-pill">RAPID</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-globe"></i> GLOBAL TIME ZONE SYNCHRONIZED <span class="marquee-pill">24/7</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-file-contract"></i> FIXED-PRICE SPRINT PROPOSALS <span class="marquee-pill">NO SURPRISES</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-flask"></i> SALEM CRAFT LAB ACCESS <span class="marquee-pill">PROTOTYPES</span></div>
+            <div class="marquee-brand-item"><i class="fas fa-comments"></i> DEDICATED SLACK &amp; DASHBOARD <span class="marquee-pill">PORTAL</span></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="responsive-contact-grid">
+
+                <div class="anim-slide-up">
+                    <span class="section-eyebrow">SALEM HQ STUDIO</span>
+                    <h2 class="section-title">Visit Our Atelier Or <span>Initiate An Inquiry</span></h2>
+                    <p style="margin-bottom: 24px; color: var(--text-muted); line-height: 1.6;">
+                        Our design partners evaluate every brief within 24 hours. For enterprise RFPs or confidential NDA requests, please indicate below.
+                    </p>
+
+                    <div style="background: var(--bg-light-mint); border-radius: var(--radius-md); padding: 28px; border: 1.5px solid rgba(135, 230, 75, 0.35); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 18px; margin-bottom: 24px;">
+                        <div style="display: flex; gap: 14px;">
+                            <div style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; color: var(--primary-obsidian); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; box-shadow: var(--shadow-sm);">
+                                <i class="fas fa-map-marker-alt" style="color: var(--accent-coral);"></i>
+                            </div>
+                            <div>
+                                <strong style="display: block; font-size: 0.95rem; color: var(--primary-obsidian); margin-bottom: 2px;">Atelier Address</strong>
+                                <p style="font-size: 0.88rem; margin: 0; line-height: 1.5;">MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 14px;">
+                            <div style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; color: var(--primary-obsidian); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; box-shadow: var(--shadow-sm);">
+                                <i class="fas fa-envelope" style="color: var(--primary-lime);"></i>
+                            </div>
+                            <div>
+                                <strong style="display: block; font-size: 0.95rem; color: var(--primary-obsidian); margin-bottom: 2px;">Direct Inquiries</strong>
+                                <p style="font-size: 0.88rem; margin: 0;"><a href="mailto:hello@stackly.design" style="color: var(--primary-obsidian); font-weight: 700;">hello@stackly.design</a></p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 14px;">
+                            <div style="width: 42px; height: 42px; border-radius: 50%; background: #ffffff; color: var(--primary-obsidian); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; box-shadow: var(--shadow-sm);">
+                                <i class="fas fa-phone-alt" style="color: var(--accent-sandal);"></i>
+                            </div>
+                            <div>
+                                <strong style="display: block; font-size: 0.95rem; color: var(--primary-obsidian); margin-bottom: 2px;">Studio Direct Line</strong>
+                                <p style="font-size: 0.88rem; margin: 0;"><a href="tel:+919876543210" style="color: var(--primary-obsidian); font-weight: 700;">+91 98765 43210</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="border-radius: var(--radius-md); overflow: hidden; height: 210px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-subtle); position: relative;">
+                        <img src="assets/images/studio_salem.webp" alt="Stackly Salem Studio" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; bottom: 12px; left: 12px; background: rgba(18,22,20,0.85); backdrop-filter: blur(8px); padding: 6px 16px; border-radius: var(--radius-full); color: #ffffff; font-size: 0.76rem; font-weight: 600; border: 1px solid rgba(135,230,75,0.3);">
+                            <i class="fas fa-building" style="margin-right: 6px; color: var(--primary-lime);"></i> Chinna Thirupathi &bull; Salem Atelier
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel anim-zoom-in" style="background: #ffffff; border-radius: var(--radius-lg); padding: 40px; border: 1.5px solid var(--border-subtle); box-shadow: var(--shadow-lg);">
+                    <span class="section-eyebrow sandal" style="margin-bottom: 8px;">PROJECT INQUIRY FORM</span>
+                    <h3 style="font-size: 1.55rem; color: var(--primary-obsidian); margin-bottom: 8px;">Tell Us About Your Vision</h3>
+                    <p style="font-size: 0.88rem; margin-bottom: 24px; color: var(--text-muted);">Please complete the details below to receive our studio capability dossier and sprint availability.</p>
+
+                    <form id="mainContactForm" novalidate>
+
+                        <div class="form-input-box" id="nameBox">
+                            <label style="display: block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 6px;">
+                                Full Name <span style="color: #ef4444;">*</span>
+                            </label>
+                            <input type="text" id="contactName" class="form-input" placeholder="e.g. Arjun Sundaram" required autocomplete="name">
+                            <div class="error-msg" id="nameError"></div>
+                        </div>
+
+                        <div class="responsive-form-row">
+                            <div class="form-input-box" id="emailBox">
+                                <label style="display: block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 6px;">
+                                    Business Email <span style="color: #ef4444;">*</span>
+                                </label>
+                                <input type="email" id="contactEmail" class="form-input" placeholder="name@company.com" required autocomplete="email">
+                                <div class="error-msg" id="emailError"></div>
+                            </div>
+                            <div class="form-input-box" id="phoneBox">
+                                <label style="display: block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 6px;">
+                                    Phone Number <span style="color: #ef4444;">*</span>
+                                </label>
+                                <input type="tel" id="contactPhone" class="form-input" placeholder="+91 98765 43210" required autocomplete="tel">
+                                <div class="error-msg" id="phoneError"></div>
+                            </div>
+                        </div>
+
+                        <div class="responsive-form-row">
+                            <div class="form-input-box">
+                                <label for="contactServiceTrigger" style="display: block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 6px;">
+                                    Primary Scope
+                                </label>
+                                <input type="hidden" id="contactService" name="contactService" value="identity">
+                                <div class="cstm-select" id="cstm-contact-service" aria-expanded="false">
+                                    <button type="button" class="cstm-select-trigger" id="contactServiceTrigger" aria-label="Primary Scope" aria-haspopup="listbox" aria-expanded="false">
+                                        <span class="cstm-select-val">Brand Identity &amp; System</span>
+                                        <i class="fas fa-chevron-down cstm-chevron"></i>
+                                    </button>
+                                    <ul class="cstm-select-list" role="listbox" aria-labelledby="contactServiceTrigger">
+                                        <li class="cstm-opt active" data-value="identity" role="option" aria-selected="true">
+                                            <span>Brand Identity &amp; System</span>
+                                            <i class="fas fa-check cstm-opt-check"></i>
+                                        </li>
+                                        <li class="cstm-opt" data-value="digital" role="option" aria-selected="false">
+                                            <span>Digital Flagship &amp; Web</span>
+                                            <i class="fas fa-check cstm-opt-check"></i>
+                                        </li>
+                                        <li class="cstm-opt" data-value="packaging" role="option" aria-selected="false">
+                                            <span>Tactile Packaging &amp; Print</span>
+                                            <i class="fas fa-check cstm-opt-check"></i>
+                                        </li>
+                                        <li class="cstm-opt" data-value="motion" role="option" aria-selected="false">
+                                            <span>Kinetic Motion &amp; Dynamic Identity</span>
+                                            <i class="fas fa-check cstm-opt-check"></i>
+                                        </li>
+                                        <li class="cstm-opt" data-value="full" role="option" aria-selected="false">
+                                            <span>Comprehensive Full-Spectrum</span>
+                                            <i class="fas fa-check cstm-opt-check"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-input-box">
+                                <label for="contactBudgetTrigger" style="display: block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 6px;">
+                                    Estimated Budget
+                                </label>
+                                <input type="hidden" id="contactBudget" name="contactBudget" value="tier2">
+                                <div class="cstm-select" id="cstm-contact-budget" aria-expanded="false">
+                                    <button type="button" class="cstm-select-trigger" id="contactBudgetTrigger" aria-label="Estimated Budget" aria-haspopup="listbox" aria-expanded="false">
+                                        <span class="cstm-select-val">$30,000 - $60,000</span>
+                                        <i class="fas fa-chevron-down cstm-chevron"></i>
+                                    </button>
+                                    <ul class="cstm-select-list" role="listbox" aria-labelledby="contactBudgetTrigger">
+                                        <li class="cstm-opt" data-value="tier1" role="option" aria-selected="false">
+                                            <span>$18,000 - $30,000</span>
+                                            <i class="fas fa-check cstm-opt-check"></i>
+                                        </li>
+                                        <li class="cstm-opt active" data-value="tier2" role="option" aria-selected="true">
+                                            <span>$30,000 - $60,000</span>
+                                            <i class="fas fa-check cstm-opt-check"></i>
+                                        </li>
+                                        <li class="cstm-opt" data-value="tier3" role="option" aria-selected="false">
+                                            <span>$60,000 - $100,000+</span>
+                                            <i class="fas fa-check cstm-opt-check"></i>
+                                        </li>
+                                        <li class="cstm-opt" data-value="custom" role="option" aria-selected="false">
+                                            <span>Enterprise Custom</span>
+                                            <i class="fas fa-check cstm-opt-check"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-input-box" id="messageBox">
+                            <label style="display: block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 6px;">
+                                Project Overview &amp; Goals <span style="color: #ef4444;">*</span>
+                            </label>
+                            <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="Briefly describe your enterprise, timeline goals, and challenge..." required></textarea>
+                            <div class="error-msg" id="messageError"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" style="padding: 14px; font-weight: 700;">
+                            Send Studio Inquiry &rarr;
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-surface); padding-top: 50px;">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">CLIENT ONBOARDING</span>
+                <h2 class="section-title">What Happens After <span>You Reach Out</span></h2>
+                <p class="section-subtitle">Our streamlined 3-step intake protocol guarantees speed, confidentiality, and direct partner access.</p>
+            </div>
+            <div class="inquiry-step-grid">
+                <div class="inquiry-step-card anim-slide-up">
+                    <div class="inquiry-step-num">01</div>
+                    <h4>Discovery Call &amp; NDA</h4>
+                    <p>We execute a mutual non-disclosure agreement and schedule a 30-minute discovery session with our founding partners.</p>
+                </div>
+                <div class="inquiry-step-card anim-slide-up" style="transition-delay: 0.1s;">
+                    <div class="inquiry-step-num">02</div>
+                    <h4>Tailored Sprint Scope</h4>
+                    <p>Within 48 hours, you receive a granular sprint proposal detailing phases, deliverables, timeline, and exact investment.</p>
+                </div>
+                <div class="inquiry-step-card anim-slide-up" style="transition-delay: 0.2s;">
+                    <div class="inquiry-step-num">03</div>
+                    <h4>Kickoff &amp; Immersion</h4>
+                    <p>Upon engagement, our senior team immerses directly into your market context to initiate Phase 01: Audit &amp; Narrative Architecture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">GLOBAL FOOTPRINT</span>
+                <h2 class="section-title">Salem Atelier &amp; <span>Global Client Delivery</span></h2>
+                <p class="section-subtitle">While our craft laboratory thrives in Salem, we serve visionary clients seamlessly across global time zones.</p>
+            </div>
+            <div class="studio-presence-grid">
+
+                <div class="studio-presence-card anim-slide-up">
+                    <div class="studio-presence-thumb">
+                        <img src="assets/images/studio_salem.webp" alt="Stackly Salem HQ">
+                    </div>
+                    <div class="studio-presence-content">
+                        <div class="live-clock-badge">
+                            <span class="pulse-indicator-dot"></span>
+                            <span>IST &bull; <span class="studio-clock-time" data-tz="Asia/Kolkata">--:--:--</span></span>
+                        </div>
+                        <h3>Salem Flagship &amp; Atelier Lab</h3>
+                        <p>MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</p>
+                        <a href="mailto:salem@stackly.design" style="font-size: 0.85rem; font-weight: 700; color: var(--primary-green);">salem@stackly.design &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="studio-presence-card anim-slide-up" style="transition-delay: 0.1s;">
+                    <div class="studio-presence-thumb">
+                        <img src="assets/images/hero_creative_workspace.webp" alt="Bangalore Design Hub">
+                    </div>
+                    <div class="studio-presence-content">
+                        <div class="live-clock-badge">
+                            <span class="pulse-indicator-dot"></span>
+                            <span>IST &bull; <span class="studio-clock-time" data-tz="Asia/Kolkata">--:--:--</span></span>
+                        </div>
+                        <h3>Bangalore Innovation Hub</h3>
+                        <p>Indiranagar Design Collective, 100 Feet Road, Bengaluru, Karnataka 560038</p>
+                        <a href="mailto:bangalore@stackly.design" style="font-size: 0.85rem; font-weight: 700; color: var(--primary-green);">bangalore@stackly.design &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="studio-presence-card anim-slide-up" style="transition-delay: 0.2s;">
+                    <div class="studio-presence-thumb">
+                        <img src="assets/images/hero_agency_boardroom.webp" alt="London Client Annex">
+                    </div>
+                    <div class="studio-presence-content">
+                        <div class="live-clock-badge">
+                            <span class="pulse-indicator-dot"></span>
+                            <span>GMT &bull; <span class="studio-clock-time" data-tz="Europe/London">--:--:--</span></span>
+                        </div>
+                        <h3>London Client Annex</h3>
+                        <p>Clerkenwell Design District, St John Street, London EC1M 4AY, United Kingdom</p>
+                        <a href="mailto:london@stackly.design" style="font-size: 0.85rem; font-weight: 700; color: var(--primary-green);">london@stackly.design &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section studio-map-section" style="background: var(--bg-surface); padding: 40px 0;">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal"><i class="fas fa-location-dot" style="margin-right: 6px;"></i> OUR ATELIER ON THE MAP</span>
+                <h2 class="section-title">Locate Our <span>Salem Craft Studio</span></h2>
+                <p class="section-subtitle">Conveniently situated in Salem, Tamil Nadu, with direct arterial highway &amp; rail connections. Visit us for in-person sprint discovery sessions and tactile packaging press checks.</p>
+            </div>
+
+            <div class="studio-map-wrapper anim-zoom-in">
+
+                <div class="map-location-tabs">
+                    <button type="button" class="map-tab-btn active" data-map-loc="salem">
+                        <span class="map-tab-dot"></span>
+                        <div class="map-tab-text-wrap">
+                            <strong>Salem HQ Atelier</strong>
+                            <span class="map-tab-sub">Chinna Thirupathi, Salem</span>
+                        </div>
+                    </button>
+                    <button type="button" class="map-tab-btn" data-map-loc="bangalore">
+                        <span class="map-tab-dot"></span>
+                        <div class="map-tab-text-wrap">
+                            <strong>Bangalore Design Hub</strong>
+                            <span class="map-tab-sub">Indiranagar, 100 Feet Rd</span>
+                        </div>
+                    </button>
+                    <button type="button" class="map-tab-btn" data-map-loc="london">
+                        <span class="map-tab-dot"></span>
+                        <div class="map-tab-text-wrap">
+                            <strong>London Client Annex</strong>
+                            <span class="map-tab-sub">Clerkenwell Design District</span>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="studio-map-grid">
+
+                    <div class="studio-map-info-card">
+                        <div class="map-info-header">
+                            <span class="map-status-pill"><span class="pulse-dot"></span> OPEN FOR SPRINT VISITS</span>
+                            <h3 id="mapLocationTitle">Salem Flagship Atelier</h3>
+                            <p id="mapLocationDesc" class="map-location-lead">Our primary craft laboratory where brand identities, variable fonts, and luxury packaging dielines are forged.</p>
+                        </div>
+
+                        <div class="map-info-details-list">
+                            <div class="map-info-item">
+                                <div class="map-info-icon"><i class="fas fa-map-pin"></i></div>
+                                <div>
+                                    <span class="map-info-label">Postal Address</span>
+                                    <p id="mapLocationAddress" class="map-info-text">MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008, India</p>
+                                </div>
+                            </div>
+
+                            <div class="map-info-item">
+                                <div class="map-info-icon"><i class="far fa-clock"></i></div>
+                                <div>
+                                    <span class="map-info-label">Studio Working Hours</span>
+                                    <p id="mapLocationHours" class="map-info-text">Monday &ndash; Saturday: 09:30 AM &ndash; 07:00 PM IST<br><span style="color: var(--text-muted); font-size: 0.8rem;">Sunday: Strictly by Executive Appointment</span></p>
+                                </div>
+                            </div>
+
+                            <div class="map-info-item">
+                                <div class="map-info-icon"><i class="fas fa-compass"></i></div>
+                                <div>
+                                    <span class="map-info-label">GPS Coordinates &amp; Transit</span>
+                                    <p id="mapLocationTransit" class="map-info-text">11.6690&deg; N, 78.1704&deg; E &bull; 15 mins from Salem Junction (SA) Railway Station</p>
+                                </div>
+                            </div>
+
+                            <div class="map-info-item">
+                                <div class="map-info-icon"><i class="fas fa-phone-volume"></i></div>
+                                <div>
+                                    <span class="map-info-label">Direct Concierge</span>
+                                    <p id="mapLocationContact" class="map-info-text"><a href="tel:+919876543210">+91 98765 43210</a> &bull; <a href="mailto:salem@stackly.design">salem@stackly.design</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="map-info-actions">
+                            <a id="mapExternalLink" href="https://maps.google.com/?q=Chinna+Thirupathi,+Salem,+Tamil+Nadu+636008" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                                <i class="fas fa-diamond-turn-right" style="margin-right: 8px;"></i> Open in Google Maps &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="studio-map-frame-wrap">
+                        <iframe
+                            id="studioMapIframe"
+                            title="Stackly Atelier Studio Map Location"
+                            src="https://maps.google.com/maps?q=Chinna+Thirupathi,+Salem,+Tamil+Nadu+636008&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                            loading="lazy"
+                            allowfullscreen=""
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="map-floating-overlay-badge">
+                            <i class="fas fa-building" style="color: var(--primary-lime); margin-right: 6px;"></i>
+                            <span id="mapFloatingBadgeText">Salem Atelier &bull; Active Hub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">CLIENT ASSURANCE</span>
+                <h2 class="section-title">Frequently Asked <span>Inquiries</span></h2>
+                <p class="section-subtitle">Key information on contracts, confidentiality, and our engagement cadence.</p>
+            </div>
+
+            <div class="agency-accordion anim-slide-up" data-open-first="true">
+                <div class="accordion-item active">
+                    <button type="button" class="accordion-header">
+                        <h4>How quickly can a sprint commence after signing?</h4>
+                        <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We operate on dedicated focus cohorts and accept a maximum of 3 clients per calendar quarter. Sprints generally commence within 7 to 14 business days following contract execution and discovery deposit.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button type="button" class="accordion-header">
+                        <h4>What is your protocol for stealth companies and NDA handling?</h4>
+                        <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We execute standard mutual NDAs before reviewing sensitive business plans or pitch decks. All internal files and sprint communications are encrypted and hosted on private servers, with zero public attribution until your explicit launch release.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button type="button" class="accordion-header">
+                        <h4>Can our internal engineering and product teams collaborate during the sprint?</h4>
+                        <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes. In Phase 04 (Living Guidelines & Tokens), we collaborate directly with your front-end engineers and product leaders via shared Figma design tokens, GitHub token pull requests, and automated CSS/JSON variables.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button type="button" class="accordion-header">
+                        <h4>Do you provide physical press checks for luxury packaging production?</h4>
+                        <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes. Our packaging partners can conduct physical on-site press checks at certified printing facilities across India, Western Europe, and North America to inspect ink density, foil registration, and substrate grain before volume runs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="responsive-cta-banner anim-zoom-in">
+                <span class="section-eyebrow sandal">START YOUR TRANSFORMATION</span>
+                <h2>Ready To Elevate <span>Your Brand?</span></h2>
+                <p>Book a strategic discovery call with our founding partners. We'll audit your current positioning and architect a bespoke roadmap for category leadership.</p>
+                <div class="responsive-cta-buttons">
+                    <a href="get-started.html" class="btn btn-primary" style="padding: 14px 28px;">Start Project Brief &rarr;</a>
+                    <a href="contact.html" class="btn btn-outline" style="padding: 14px 28px; background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.25); color: #ffffff;">Schedule Discovery Call</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html"><img src="assets/logo.webp" alt="Stackly Studio"></a>
+                    <p>Stackly is a premier brand design agency engineering bespoke identity systems, tactile packaging, and high-performance digital flagships.</p>
+                    <div class="footer-socials">
+                        <a href="404.html" class="footer-social-btn" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="404.html" class="footer-social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="404.html" class="footer-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="404.html" class="footer-social-btn" title="Behance"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <div class="footer-links-list">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Portals &amp; Legal</h4>
+                    <div class="footer-links-list">
+                        <a href="404.html">Privacy Policy</a>
+                        <a href="404.html">Terms of Engagement</a>
+                        <a href="404.html">Client Security Protocol</a>
+                        <a href="404.html">Intellectual Property Rights</a>
+                        <a href="404.html">Brand Governance Guidelines</a>
+                        <a href="404.html">Cookie Policy &amp; Disclosures</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Salem Studio HQ</h4>
+                    <p class="footer-address-text">
+                        <i class="fas fa-map-marker-alt" style="color: var(--accent-mint); margin-right: 8px;"></i>
+                        MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008
+                    </p>
+                    <p class="footer-address-text">
+                        <i class="fas fa-envelope" style="color: var(--accent-mint); margin-right: 8px;"></i>
+                        <a href="contact.html" style="color: #ffffff;">hello@stackly.design</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom-bar">
+                <div>&copy; 2026 Stackly Brand Design Agency. All Rights Reserved.</div>
+                <div>Salem HQ &bull; Global Client Delivery</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

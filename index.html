@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly - Ultimate Brand Design Agency Portfolio</title>
+    <link rel="icon" href="assets/top-logo.webp" type="image/webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stackly-preloader" id="stacklyPreloader">
+        <div class="preloader-brand">
+            <img src="assets/logo.webp" alt="Stackly Studio">
+        </div>
+        <div class="preloader-bar-wrap">
+            <div class="preloader-bar-fill" id="preloaderFill"></div>
+        </div>
+        <div class="preloader-meta">
+            <span>SYNCHRONIZING CANVAS</span>
+            <span id="preloaderCounter">0%</span>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo" title="Stackly Studio Home">
+                <img src="assets/logo.webp" alt="Stackly Studio">
+            </a>
+
+            <nav class="nav-links-wrap">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-cta-actions">
+                <a href="signin.html" class="btn btn-outline" style="padding: 8px 18px; font-size: 0.85rem;">Sign In</a>
+                <a href="get-started.html" class="btn btn-accent" style="padding: 8px 20px; font-size: 0.85rem;">Get Started</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open Mobile Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="mobile-drawer-header">
+            <a href="index.html" class="brand-logo" title="Stackly Studio Home">
+                <img src="assets/logo.webp" alt="Stackly Studio">
+            </a>
+            <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Mobile Menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-drawer-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-drawer-actions">
+            <a href="signin.html" class="btn btn-outline btn-block">Sign In</a>
+            <a href="get-started.html" class="btn btn-accent btn-block">Get Started</a>
+        </div>
+    </div>
+
+    <section class="hero-bandee-section">
+
+        <img src="assets/images/hero_creative_leader2.webp" alt="Stackly Studio Creative Leadership" class="hero-bg-img">
+        <div class="hero-gradient-overlay"></div>
+
+        <div class="hero-content-stage">
+
+            <div class="hero-left-col anim-slide-up">
+                <div class="hero-play-pulse-wrap">
+                    <button class="hero-play-btn" id="heroPlayBtn" aria-label="Play Studio Showreel" data-cursor="PLAY">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <span class="hero-play-label">Watch Showreel</span>
+                </div>
+            </div>
+
+            <div class="hero-glass-card anim-zoom-in">
+                <span class="hero-glass-eyebrow">ARCHITECTS OF PRESTIGE BRANDS</span>
+                <h1>Elevating Bold Visions Into Iconic Market Leaders</h1>
+                <p>We build mathematical identity systems, proprietary editorial type, and tactile packaging that accelerate market trust and enterprise valuation.</p>
+                <div>
+                    <a href="services.html" class="btn btn-primary" data-cursor="EXPLORE">DISCOVER CAPABILITIES &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="hero-dock-wrapper">
+        <div class="hero-bottom-dock">
+
+            <div class="dock-card-accent anim-slide-left">
+                <i class="fas fa-arrow-pointer"></i>
+                <h3>Strategic Branding</h3>
+                <p>Distinctive positioning, custom typography, and enduring visual systems.</p>
+            </div>
+
+            <div class="dock-card-quote anim-slide-up" style="transition-delay: 0.1s;">
+                <blockquote>
+                    &ldquo; Design is the operational engine that accelerates customer trust and enterprise valuation. &rdquo;
+                </blockquote>
+                <p class="quote-author">Arjun Rathore</p>
+                <span class="quote-role">CREATIVE DIRECTOR</span>
+            </div>
+
+            <div class="dock-card-image anim-slide-right" style="transition-delay: 0.2s;">
+                <img src="assets/images/team_collab.webp" alt="Stackly Creative Studio Sprint">
+                <div class="dock-image-badge">
+                    <span class="live-pulse-dot"></span> Salem HQ &bull; Active Sprint
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand-ticker-section">
+        <div class="ticker-track">
+            <span class="ticker-item"><i class="fas fa-trophy"></i> RED DOT: BEST OF THE BEST 2026</span>
+            <span class="ticker-dot-sep"></span>
+            <span class="ticker-item"><i class="fas fa-award"></i> CANNES LIONS GOLD &bull; DESIGN CRAFT</span>
+            <span class="ticker-dot-sep"></span>
+            <span class="ticker-item"><i class="fas fa-star"></i> AWWWARDS AGENCY OF THE YEAR NOMINEE</span>
+            <span class="ticker-dot-sep"></span>
+            <span class="ticker-item"><i class="fas fa-gem"></i> D&amp;AD YELLOW PENCIL &bull; BRAND IDENTITY</span>
+            <span class="ticker-dot-sep"></span>
+            <span class="ticker-item"><i class="fas fa-globe"></i> 140+ GLOBAL ENTERPRISE CLIENTS</span>
+            <span class="ticker-dot-sep"></span>
+            <span class="ticker-item"><i class="fas fa-trophy"></i> RED DOT: BEST OF THE BEST 2026</span>
+            <span class="ticker-dot-sep"></span>
+            <span class="ticker-item"><i class="fas fa-award"></i> CANNES LIONS GOLD &bull; DESIGN CRAFT</span>
+            <span class="ticker-dot-sep"></span>
+            <span class="ticker-item"><i class="fas fa-star"></i> AWWWARDS AGENCY OF THE YEAR NOMINEE</span>
+        </div>
+    </div>
+
+    <div style="background: var(--bg-surface); padding: 30px 0; border-bottom: 1px solid var(--border-subtle);">
+        <div class="container">
+            <div class="responsive-metrics-grid anim-slide-up">
+                <div style="border-right: 1px solid var(--border-subtle); padding: 10px;">
+                    <strong class="counter-number" data-target="650" data-prefix="$" data-suffix="M+" style="font-family: 'Space Grotesk', sans-serif; font-size: 2.2rem; color: var(--primary-green); display: block; line-height: 1;">$0M+</strong>
+                    <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 0.5px;">Client Value Generated</span>
+                </div>
+                <div style="border-right: 1px solid var(--border-subtle); padding: 10px;">
+                    <strong class="counter-number" data-target="140" data-prefix="" data-suffix="+" style="font-family: 'Space Grotesk', sans-serif; font-size: 2.2rem; color: var(--accent-mint); display: block; line-height: 1;">0+</strong>
+                    <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 0.5px;">Global Brand Sprints</span>
+                </div>
+                <div style="border-right: 1px solid var(--border-subtle); padding: 10px;">
+                    <strong class="counter-number" data-target="18" data-prefix="" data-suffix="" style="font-family: 'Space Grotesk', sans-serif; font-size: 2.2rem; color: var(--accent-sandal-dark); display: block; line-height: 1;">0</strong>
+                    <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 0.5px;">International Design Awards</span>
+                </div>
+                <div style="padding: 10px;">
+                    <strong class="counter-number" data-target="100" data-prefix="" data-suffix="%" style="font-family: 'Space Grotesk', sans-serif; font-size: 2.2rem; color: var(--primary-green); display: block; line-height: 1;">0%</strong>
+                    <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 0.5px;">Commercial IP Transfer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="agency-mosaic-section">
+        <div class="container">
+            <div class="mosaic-grid-wrapper">
+
+                <div class="mosaic-visual-collage anim-slide-left">
+                    <div class="mosaic-col">
+                        <div class="mosaic-img-card mosaic-img-tall">
+                            <img src="assets/images/hero_candidate_1.webp" alt="Stackly Creative Director at Salem Headquarters" loading="lazy">
+                        </div>
+                        <div class="mosaic-coral-card">
+                            <h3>15+ Years Of Experience</h3>
+                            <p>Architecting iconic brand systems, bespoke typography, and strategic market dominance for global enterprises.</p>
+                        </div>
+                    </div>
+                    <div class="mosaic-col">
+                        <div class="mosaic-img-card mosaic-img-medium">
+                            <img src="assets/images/hero_director_tablet.webp" alt="Stackly Strategy and Design Leadership" loading="lazy">
+                        </div>
+                        <div class="mosaic-img-card mosaic-img-short">
+                            <img src="assets/images/studio_materials.webp" alt="Stackly Collaborative Brand Sprint Workshop" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mosaic-content-panel anim-slide-right">
+                    <span class="mosaic-eyebrow">WHO WE ARE</span>
+                    <h2 class="mosaic-title">Forging Iconic Brand Equity For <span>Visionary Market Leaders</span></h2>
+                    <p class="mosaic-lead">From our flagship studio in Salem, Stackly engineers high-stakes brand identities, proprietary typography, and strategic visual systems for ambitious enterprises worldwide.</p>
+
+                    <div class="mosaic-quote-box">
+                        <p class="mosaic-quote-text">&ldquo;Design is the operational engine that accelerates customer trust, institutional prestige, and enterprise valuation.&rdquo;</p>
+                    </div>
+
+                    <div class="mosaic-dual-features">
+                        <div class="mosaic-stat-box">
+                            <strong class="mosaic-stat-val counter-number" data-target="897" data-prefix="" data-suffix="+">897+</strong>
+                            <span class="mosaic-stat-label">Client Partners Worldwide</span>
+                        </div>
+                        <div class="mosaic-feature-item">
+                            <div class="mosaic-feature-icon">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <div class="mosaic-feature-text">
+                                <h4>100% Commercial IP Sovereignty</h4>
+                                <p>Complete global trademark rights, bespoke font licenses, and vector source kits with zero recurring royalties.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mosaic-actions">
+                        <a href="about.html" class="btn btn-coral" data-cursor="ABOUT">LEARN MORE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header anim-slide-up">
+                <span class="section-eyebrow">INTEGRATED BRAND PRACTICE</span>
+                <h2 class="section-title">A Precision Workflow Engineered For <span>Unrivaled Impact</span></h2>
+                <p class="section-subtitle">From strategic naming and custom typography to tactile packaging and digital brand systems, our disciplines integrate seamlessly.</p>
+            </div>
+
+            <div class="sticky-split-container">
+
+                <div class="sticky-media-dock anim-slide-left">
+                    <img src="assets/images/sticky_tall_showcase.webp" alt="Stackly Brand Showcase Masterwork">
+                    <div class="sticky-floating-stat sticky-stat-1">
+                        <div class="sticky-stat-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="sticky-stat-text">
+                            <strong>+340% ROAS</strong>
+                            <span>Post-Rebrand Scale</span>
+                        </div>
+                    </div>
+                    <div class="sticky-floating-stat sticky-stat-2">
+                        <div class="sticky-stat-icon"><i class="fas fa-fingerprint"></i></div>
+                        <div class="sticky-stat-text">
+                            <strong>100% Custom</strong>
+                            <span>Proprietary Font Kit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sticky-cards-column">
+                    <div class="scroll-stack-card is-active anim-slide-right">
+                        <span class="scroll-stack-num">01</span>
+                        <span class="section-eyebrow">DISCOVERY &bull; STRATEGY</span>
+                        <h3>Brand Strategy &amp; Positioning</h3>
+                        <p>We dissect competitor landscapes and construct bulletproof brand architectures that scale with enterprise growth.</p>
+                        <div class="deliverables-pill-row">
+                            <span class="d-pill">Audience Personas</span>
+                            <span class="d-pill">Positioning Matrix</span>
+                            <span class="d-pill">Tone of Voice</span>
+                        </div>
+                    </div>
+
+                    <div class="scroll-stack-card anim-slide-right">
+                        <span class="scroll-stack-num">02</span>
+                        <span class="section-eyebrow sandal">VISUAL IDENTITY</span>
+                        <h3>Identity Systems &amp; Custom Typography</h3>
+                        <p>We sculpt proprietary editorial typography, vector logomarks, and cohesive design tokens engineered for global prestige.</p>
+                        <div class="deliverables-pill-row">
+                            <span class="d-pill">Vector Logo Suites</span>
+                            <span class="d-pill">Variable Fonts</span>
+                            <span class="d-pill">Design Guidelines</span>
+                        </div>
+                    </div>
+
+                    <div class="scroll-stack-card anim-slide-right">
+                        <span class="scroll-stack-num">03</span>
+                        <span class="section-eyebrow">TACTILE &bull; PHYSICAL</span>
+                        <h3>Packaging &amp; Environmental Spatial</h3>
+                        <p>From sustainable unboxing experiences to bespoke foil finishes and flagship signage, we ground brands into tactile reality.</p>
+                        <div class="deliverables-pill-row">
+                            <span class="d-pill">Structural Dielines</span>
+                            <span class="d-pill">Material Sourcing</span>
+                            <span class="d-pill">Emboss Guides</span>
+                        </div>
+                    </div>
+
+                    <div class="scroll-stack-card anim-slide-right">
+                        <span class="scroll-stack-num">04</span>
+                        <span class="section-eyebrow sandal">EXPERIENCE DESIGN</span>
+                        <h3>Digital Flagships &amp; Web Systems</h3>
+                        <p>We design high-converting, lightning-fast digital flagship experiences engineered with fluid micro-interactions and intuitive user funnels.</p>
+                        <div class="deliverables-pill-row">
+                            <span class="d-pill">UI/UX Architecture</span>
+                            <span class="d-pill">Design Systems</span>
+                            <span class="d-pill">Interactive Prototypes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow">EXPLORE CAPABILITIES</span>
+                <h2 class="section-title">Hover To Expand Our <span>Creative Disciplines</span></h2>
+                <p class="section-subtitle">Interact with our core studio branches below to reveal detailed deliverables and visual case showcases.</p>
+            </div>
+
+            <div class="expandable-accordion-wrap anim-zoom-in">
+
+                <div class="expand-card-item active">
+                    <img src="assets/images/service_identity.webp" alt="Identity Systems" class="expand-card-bg">
+                    <div class="expand-card-overlay">
+                        <span class="expand-card-collapsed-title">01 &bull; Identity Systems</span>
+                        <div class="expand-card-expanded-content">
+                            <span class="section-eyebrow">CAPABILITY 01</span>
+                            <h3>Brand Identity &amp; System Architecture</h3>
+                            <p>Complete corporate identities, custom typography, brand guidelines, and vector suites crafted with millimeter mathematical perfection.</p>
+                            <a href="services.html" class="btn btn-accent" style="padding: 8px 18px; font-size: 0.82rem;" data-cursor="EXPLORE">Explore Capability &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expand-card-item">
+                    <img src="assets/images/service_digital.webp" alt="Digital Flagships" class="expand-card-bg">
+                    <div class="expand-card-overlay">
+                        <span class="expand-card-collapsed-title">02 &bull; Digital Flagships</span>
+                        <div class="expand-card-expanded-content">
+                            <span class="section-eyebrow sandal">CAPABILITY 02</span>
+                            <h3>Digital Experience &amp; UI/UX Systems</h3>
+                            <p>Immersive, award-caliber digital platforms engineered with fluid transitions, responsive layouts, and intuitive buyer funnels.</p>
+                            <a href="services.html" class="btn btn-sandal" style="padding: 8px 18px; font-size: 0.82rem;" data-cursor="EXPLORE">Explore Capability &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expand-card-item">
+                    <img src="assets/images/service_packaging.webp" alt="Luxury Packaging" class="expand-card-bg">
+                    <div class="expand-card-overlay">
+                        <span class="expand-card-collapsed-title">03 &bull; Luxury Packaging</span>
+                        <div class="expand-card-expanded-content">
+                            <span class="section-eyebrow">CAPABILITY 03</span>
+                            <h3>Tactile Packaging &amp; Unboxing</h3>
+                            <p>Sensory packaging design with sustainable FSC substrates, custom dielines, tactile hot-stamping, and shelf impact testing.</p>
+                            <a href="services.html" class="btn btn-accent" style="padding: 8px 18px; font-size: 0.82rem;" data-cursor="EXPLORE">Explore Capability &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expand-card-item">
+                    <img src="assets/images/service_motion.webp" alt="Kinetic Motion" class="expand-card-bg">
+                    <div class="expand-card-overlay">
+                        <span class="expand-card-collapsed-title">04 &bull; Kinetic Branding</span>
+                        <div class="expand-card-expanded-content">
+                            <span class="section-eyebrow sandal">CAPABILITY 04</span>
+                            <h3>Kinetic Motion &amp; Dynamic Identity</h3>
+                            <p>Dynamic kinetic logos, broadcast video idents, and digital brand motion guidelines that captivate audiences.</p>
+                            <a href="services.html" class="btn btn-sandal" style="padding: 8px 18px; font-size: 0.82rem;" data-cursor="EXPLORE">Explore Capability &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expand-card-item">
+                    <img src="assets/images/service_guidelines.webp" alt="Brand Guidelines" class="expand-card-bg">
+                    <div class="expand-card-overlay">
+                        <span class="expand-card-collapsed-title">05 &bull; Design Governance</span>
+                        <div class="expand-card-expanded-content">
+                            <span class="section-eyebrow">CAPABILITY 05</span>
+                            <h3>Design Systems &amp; Brand Governance</h3>
+                            <p>Living brand guidelines, component design libraries, and governance documentation that maintain brand equity.</p>
+                            <a href="services.html" class="btn btn-accent" style="padding: 8px 18px; font-size: 0.82rem;" data-cursor="EXPLORE">Explore Capability &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">PHILOSOPHY &bull; DOCTRINES</span>
+                <h2 class="section-title">The Four Immutable <span>Brand Doctrines</span></h2>
+                <p class="section-subtitle">Hover or tap each card to reveal our mathematical and strategic design doctrines.</p>
+            </div>
+
+            <div class="flip-cards-grid">
+
+                <div class="flip-card anim-slide-left">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div>
+                                <div class="flip-icon-wrap"><i class="fas fa-compass-drafting"></i></div>
+                                <h3 class="flip-front-title">Mathematical Rigor</h3>
+                                <p class="flip-front-desc">Geometric grids, golden ratios, and optical kerning systems engineered to remain timeless for decades.</p>
+                            </div>
+                            <span class="flip-hint-pill"><i class="fas fa-rotate"></i> Flip For Blueprint</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <span class="section-eyebrow sandal" style="font-size: 0.7rem;">DOCTRINE 01</span>
+                                <h4 style="color: #ffffff; font-size: 1.05rem; margin: 4px 0 8px;">Geometry Over Trends</h4>
+                                <p style="font-size: 0.78rem; line-height: 1.45; color: rgba(255,255,255,0.85); margin-bottom: 10px;">
+                                     Trends expire in 18 months; Euclidean geometry lasts a millennium. We anchor brand identities in enduring spatial harmonies.
+                                </p>
+                            </div>
+                            <div style="font-size: 0.72rem; color: var(--accent-mint); font-weight: 700;">
+                                <i class="fas fa-check-double"></i> 100% Vector Geometry
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div>
+                                <div class="flip-icon-wrap"><i class="fas fa-layer-group"></i></div>
+                                <h3 class="flip-front-title">Systemic Cohesion</h3>
+                                <p class="flip-front-desc">Every touchpoint—from digital micro-interactions to 500gsm foil packaging—shares one unified voice.</p>
+                            </div>
+                            <span class="flip-hint-pill"><i class="fas fa-rotate"></i> Flip For Blueprint</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <span class="section-eyebrow sandal" style="font-size: 0.7rem;">DOCTRINE 02</span>
+                                <h4 style="color: #ffffff; font-size: 1.05rem; margin: 4px 0 8px;">Omnichannel Unity</h4>
+                                <p style="font-size: 0.78rem; line-height: 1.45; color: rgba(255,255,255,0.85); margin-bottom: 10px;">
+                                     A fragmented identity erodes trust. We enforce living design tokens that synchronize Figma, Web, Print, and Spatial mediums.
+                                </p>
+                            </div>
+                            <div style="font-size: 0.72rem; color: var(--accent-mint); font-weight: 700;">
+                                <i class="fas fa-check-double"></i> Tokenized Design System
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div>
+                                <div class="flip-icon-wrap"><i class="fas fa-chart-pie"></i></div>
+                                <h3 class="flip-front-title">Commercial Utility</h3>
+                                <p class="flip-front-desc">Design is an instrument of business leverage. We measure aesthetic craft by enterprise valuation impact.</p>
+                            </div>
+                            <span class="flip-hint-pill"><i class="fas fa-rotate"></i> Flip For Blueprint</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <span class="section-eyebrow sandal" style="font-size: 0.7rem;">DOCTRINE 03</span>
+                                <h4 style="color: #ffffff; font-size: 1.05rem; margin: 4px 0 8px;">Economic Valuation</h4>
+                                <p style="font-size: 0.78rem; line-height: 1.45; color: rgba(255,255,255,0.85); margin-bottom: 10px;">
+                                     High craft commands premium pricing. Our rebrands enable clients to raise capital, increase prices, and expand market share.
+                                </p>
+                            </div>
+                            <div style="font-size: 0.72rem; color: var(--accent-mint); font-weight: 700;">
+                                <i class="fas fa-check-double"></i> Documented 3.4x ROI
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card anim-slide-right">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div>
+                                <div class="flip-icon-wrap"><i class="fas fa-hand-sparkles"></i></div>
+                                <h3 class="flip-front-title">Tactile Mastery</h3>
+                                <p class="flip-front-desc">Physical materiality creates emotional permanence in an ephemeral screen-dominated world.</p>
+                            </div>
+                            <span class="flip-hint-pill"><i class="fas fa-rotate"></i> Flip For Blueprint</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <span class="section-eyebrow sandal" style="font-size: 0.7rem;">DOCTRINE 04</span>
+                                <h4 style="color: #ffffff; font-size: 1.05rem; margin: 4px 0 8px;">Sensory Presence</h4>
+                                <p style="font-size: 0.78rem; line-height: 1.45; color: rgba(255,255,255,0.85); margin-bottom: 10px;">
+                                    From debossed heavy cardstock to custom glass moulds and textured varnishes, our tactile packaging builds physical desire.
+                                </p>
+                            </div>
+                            <div style="font-size: 0.72rem; color: var(--accent-mint); font-weight: 700;">
+                                <i class="fas fa-check-double"></i> FSC &bull; Sustainable Substrates
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px;">
+                <div>
+                    <span class="section-eyebrow">CURATED PORTFOLIO</span>
+                    <h2 class="section-title">Selected Works &amp; <span>Success Stories</span></h2>
+                    <p class="section-subtitle">Real results for forward-thinking enterprises across luxury, technology, and lifestyle.</p>
+                </div>
+                <a href="projects.html" class="btn btn-outline">View All Projects &rarr;</a>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card anim-slide-left">
+                    <div class="project-thumb-frame">
+                        <img src="assets/images/project_cosmetics.webp" alt="Veda Living Organic Cosmetics">
+                        <span class="project-cat-badge">Brand Identity &bull; Packaging</span>
+                    </div>
+                    <div class="project-info-body">
+                        <div>
+                            <h3>Veda Living</h3>
+                            <p>Complete rebrand, custom glass packaging dielines, and sustainable unboxing architecture for luxury botanical skincare.</p>
+                        </div>
+                        <div class="project-metric-row">
+                            <span class="project-metric-val">+310% DTC Revenue</span>
+                            <a href="projects.html" style="font-weight: 700; color: var(--primary-obsidian); font-size: 0.85rem;" data-cursor="CASE">Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card anim-slide-up" style="transition-delay: 0.1s;">
+                    <div class="project-thumb-frame">
+                        <img src="assets/images/project_fintech.webp" alt="Apex Wealth Global FinTech">
+                        <span class="project-cat-badge">Digital UI/UX &bull; App</span>
+                    </div>
+                    <div class="project-info-body">
+                        <div>
+                            <h3>Apex Wealth</h3>
+                            <p>Modern design system, dark-mode financial dashboard interface, and brand identity for institutional asset management.</p>
+                        </div>
+                        <div class="project-metric-row">
+                            <span class="project-metric-val">Red Dot Best 2026</span>
+                            <a href="projects.html" style="font-weight: 700; color: var(--primary-obsidian); font-size: 0.85rem;" data-cursor="CASE">Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card anim-slide-right" style="transition-delay: 0.2s;">
+                    <div class="project-thumb-frame">
+                        <img src="assets/images/project_architecture.webp" alt="Solstice Architecture">
+                        <span class="project-cat-badge">Spatial &bull; Monograph</span>
+                    </div>
+                    <div class="project-info-body">
+                        <div>
+                            <h3>Solstice Architecture</h3>
+                            <p>Monolithic brand identity, metallic hot-stamped monograph book, and minimalist digital showcase for modernist architectural firm.</p>
+                        </div>
+                        <div class="project-metric-row">
+                            <span class="project-metric-val">Awwwards SOTD</span>
+                            <a href="projects.html" style="font-weight: 700; color: var(--primary-obsidian); font-size: 0.85rem;" data-cursor="CASE">Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card anim-slide-left">
+                    <div class="project-thumb-frame">
+                        <img src="assets/images/project_coffee.webp" alt="Artisan Roast Specialty Roastery">
+                        <span class="project-cat-badge">Tactile &bull; Identity</span>
+                    </div>
+                    <div class="project-info-body">
+                        <div>
+                            <h3>Artisan Roast</h3>
+                            <p>Organic specialty roastery identity featuring custom woodcut typography, embossed airtight tin packaging, and coffee subscription platform.</p>
+                        </div>
+                        <div class="project-metric-row">
+                            <span class="project-metric-val">+220% Subscription Rate</span>
+                            <a href="projects.html" style="font-weight: 700; color: var(--primary-obsidian); font-size: 0.85rem;" data-cursor="CASE">Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card anim-slide-up" style="transition-delay: 0.1s;">
+                    <div class="project-thumb-frame">
+                        <img src="assets/images/project_horology.webp" alt="Chronos Haute Horlogerie">
+                        <span class="project-cat-badge">Luxury &bull; Art Direction</span>
+                    </div>
+                    <div class="project-info-body">
+                        <div>
+                            <h3>Chronos Horology</h3>
+                            <p>Bespoke horology identity, fine tactile packaging, and VIP collector monograph for Swiss independent watchmaker.</p>
+                        </div>
+                        <div class="project-metric-row">
+                            <span class="project-metric-val">100% Edition Sell-out</span>
+                            <a href="projects.html" style="font-weight: 700; color: var(--primary-obsidian); font-size: 0.85rem;" data-cursor="CASE">Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card anim-slide-right" style="transition-delay: 0.2s;">
+                    <div class="project-thumb-frame">
+                        <img src="assets/images/project_fashion.webp" alt="Aurelia Haute Lookbook">
+                        <span class="project-cat-badge">Editorial &bull; E-Com</span>
+                    </div>
+                    <div class="project-info-body">
+                        <div>
+                            <h3>Aurelia Couture</h3>
+                            <p>High-fashion editorial brand guide, custom serif logotype, seasonal runway lookbook, and headless luxury e-commerce experience.</p>
+                        </div>
+                        <div class="project-metric-row">
+                            <span class="project-metric-val">Vogue International Feature</span>
+                            <a href="projects.html" style="font-weight: 700; color: var(--primary-obsidian); font-size: 0.85rem;" data-cursor="CASE">Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lime-callout-banner-section">
+        <div class="container">
+            <div class="lime-callout-banner anim-zoom-in">
+                <div class="lime-callout-content">
+                    <h2>Command Unmatched Market Distinction. One Dedicated Agency Partnership.</h2>
+                    <p>Proprietary typography, identity architecture, luxury packaging, and digital flagships. All included in your bespoke quarterly sprint with zero hourly billing.</p>
+                </div>
+                <div class="lime-callout-action">
+                    <a href="get-started.html" class="btn-banner-dark" data-cursor="START">
+                        <span>Start A Brand Sprint</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow">TRANSFORMATION IMPACT</span>
+                <h2 class="section-title">Drag To Reveal The <span>Stackly Transformation</span></h2>
+                <p class="section-subtitle">Slide horizontally to witness the leap from fragmented legacy branding to an ultra-modern, high-converting design system.</p>
+            </div>
+
+            <div class="before-after-wrapper anim-zoom-in" data-cursor="DRAG">
+
+                <div class="before-img-wrap">
+                    <img src="assets/images/brand_transform_before.webp" alt="Legacy Brand Architecture" class="before-img-layer">
+                    <span class="before-tag-badge"><i class="fas fa-history"></i> <span class="badge-prefix">BEFORE:</span> <span class="badge-title">LEGACY SYSTEM</span></span>
+                </div>
+
+                <div class="after-img-wrap">
+                    <img src="assets/images/brand_transform_after.webp" alt="Stackly Flagship Brand Identity" class="after-img-layer">
+                    <span class="after-tag-badge"><i class="fas fa-sparkles"></i> <span class="badge-prefix">AFTER:</span> <span class="badge-title">STACKLY REBRAND</span></span>
+                </div>
+
+                <div class="before-after-divider">
+                    <div class="before-after-handle">
+                        <i class="fas fa-arrows-left-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 30px; margin-top: 24px; font-size: 0.82rem; color: var(--text-muted); flex-wrap: wrap;">
+                <span><i class="fas fa-check-circle" style="color: var(--accent-mint); margin-right: 6px;"></i> +340% Higher Perceived Enterprise Value</span>
+                <span><i class="fas fa-check-circle" style="color: var(--accent-mint); margin-right: 6px;"></i> Cohesive Cross-Platform Design Tokens</span>
+                <span><i class="fas fa-check-circle" style="color: var(--accent-mint); margin-right: 6px;"></i> Zero Inconsistency Across 12 Mediums</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-light-mint);">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow">TRANSPARENT ENGAGEMENT</span>
+                <h2 class="section-title">Interactive Brand <span>Budget Estimator</span></h2>
+                <p class="section-subtitle">Select your project deliverables and organization stage below to calculate your estimated investment and sprint timeline in real time.</p>
+            </div>
+
+            <div class="brand-calculator-card anim-zoom-in">
+                <div>
+                    <h3 class="calc-title">Configure Your Scope</h3>
+                    <p style="margin-bottom: 20px; font-size: 0.88rem;">Select required design deliverables (toggle any to add/remove):</p>
+
+                    <div class="calc-step-group">
+                        <label class="calc-label">1. Core Deliverables</label>
+                        <div class="calc-chips-grid">
+                            <div class="calc-chip active" data-service="identity">
+                                <span><i class="fas fa-fingerprint" style="margin-right: 8px;"></i> Brand Identity</span>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="calc-chip active" data-service="digital">
+                                <span><i class="fas fa-laptop-code" style="margin-right: 8px;"></i> Digital Flagship</span>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="calc-chip" data-service="packaging">
+                                <span><i class="fas fa-box-open" style="margin-right: 8px;"></i> Packaging &amp; Print</span>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="calc-chip" data-service="motion">
+                                <span><i class="fas fa-film" style="margin-right: 8px;"></i> Kinetic Motion Assets</span>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-step-group">
+                        <label class="calc-label">2. Company Stage</label>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <div class="calc-chip" data-stage="startup" style="flex: 1;">Early Stage</div>
+                            <div class="calc-chip active" data-stage="growth" style="flex: 1;">Growth Scale-Up</div>
+                            <div class="calc-chip" data-stage="enterprise" style="flex: 1;">Global Enterprise</div>
+                        </div>
+                    </div>
+
+                    <div class="calc-step-group" style="margin-bottom: 0;">
+                        <label class="calc-label">3. Desired Sprint Duration</label>
+                        <div class="calc-range-wrap">
+                            <input type="range" min="4" max="14" value="8" step="1" class="calc-range-slider" id="calcTimelineSlider">
+                            <div class="calc-range-values">
+                                <span>4 Weeks (Accelerated)</span>
+                                <span>8 Weeks (Standard)</span>
+                                <span>14 Weeks (Comprehensive)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calc-summary-panel">
+                    <div>
+                        <h4>Estimated Sprint Investment</h4>
+                        <div class="calc-price-display" id="calcPriceDisplay">$42,000</div>
+                        <div class="calc-timeline-display" id="calcTimelineDisplay">
+                            <i class="fas fa-calendar-alt"></i> Estimated Sprint: 8 Weeks
+                        </div>
+
+                        <div class="calc-features-list">
+                            <div class="calc-feature-item"><i class="fas fa-check-circle"></i> Dedicated Art Director &amp; Lead Designer</div>
+                            <div class="calc-feature-item"><i class="fas fa-check-circle"></i> Full Commercial IP &amp; Vector Source Files</div>
+                            <div class="calc-feature-item"><i class="fas fa-check-circle"></i> Bi-Weekly Video Milestones &amp; Dashboard</div>
+                            <div class="calc-feature-item"><i class="fas fa-check-circle"></i> 30 Days Post-Launch Brand Governance</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="get-started.html" class="btn btn-accent btn-block" style="padding: 14px; font-weight: 700;">Initiate Discovery Sprint &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">CLIENT VOICES</span>
+                <h2 class="section-title">Trusted By Founders &amp; <span>Global Leaders</span></h2>
+                <p class="section-subtitle">Hear how Stackly has transformed market positioning and elevated brand equity across multiple continents.</p>
+            </div>
+
+            <div class="reviews-carousel-wrapper">
+                <div class="reviews-track" id="reviewsTrack">
+
+                    <div class="reviews-slide">
+                        <div class="rev-card">
+                            <p>&ldquo;Stackly took our rough botanical skincare concept and transformed it into an ultra-luxury brand that secured Sephora distribution in 90 days.&rdquo;</p>
+                            <div class="rev-user">
+                                <img src="assets/images/user1.webp" alt="Kavitha Sundaram">
+                                <div>
+                                    <h4>Kavitha Sundaram</h4>
+                                    <span class="rev-company">Founder &bull; Veda Living</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rev-card">
+                            <p>&ldquo;The precision of their custom typography and design system gave our fintech platform the institutional credibility we needed for our Series B.&rdquo;</p>
+                            <div class="rev-user">
+                                <img src="assets/images/user2.webp" alt="David Sterling">
+                                <div>
+                                    <h4>David Sterling</h4>
+                                    <span class="rev-company">Managing Director &bull; Apex Wealth</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rev-card">
+                            <p>&ldquo;In an industry full of generic templates, Stackly delivers genuine, museum-grade art direction with razor-sharp commercial strategy.&rdquo;</p>
+                            <div class="rev-user">
+                                <img src="assets/images/user3.webp" alt="Elena Rostova">
+                                <div>
+                                    <h4>Elena Rostova</h4>
+                                    <span class="rev-company">Principal &bull; Solstice Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-slide">
+                        <div class="rev-card">
+                            <p>&ldquo;Their team in Salem operates at the exact standard of top London and New York studios. The response to our unboxing packaging has been phenomenal.&rdquo;</p>
+                            <div class="rev-user">
+                                <img src="assets/images/user4.webp" alt="Marcus Chen">
+                                <div>
+                                    <h4>Marcus Chen</h4>
+                                    <span class="rev-company">CEO &bull; Artisan Roast Group</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rev-card">
+                            <p>&ldquo;From client portal sprint tracking to the final vector asset deliveries, the professionalism and aesthetic excellence exceeded every expectation.&rdquo;</p>
+                            <div class="rev-user">
+                                <img src="assets/images/user2.webp" alt="Sophia Al-Mansoor">
+                                <div>
+                                    <h4>Sophia Al-Mansoor</h4>
+                                    <span class="rev-company">Creative Partner &bull; Aurelia Couture</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rev-card">
+                            <p>&ldquo;Stackly’s horology art direction and tactile unboxing were so extraordinary our entire limited edition of 500 pieces sold out within 48 hours.&rdquo;</p>
+                            <div class="rev-user">
+                                <img src="assets/images/user1.webp" alt="Philippe Weber">
+                                <div>
+                                    <h4>Philippe Weber</h4>
+                                    <span class="rev-company">Horology Director &bull; Chronos Swiss</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-slide">
+                        <div class="rev-card">
+                            <p>&ldquo;Stackly’s brand guidelines document is now our internal bible. Every designer, marketer, and packaging engineer references it daily.&rdquo;</p>
+                            <div class="rev-user">
+                                <img src="assets/images/user3.webp" alt="Priya Natarajan">
+                                <div>
+                                    <h4>Priya Natarajan</h4>
+                                    <span class="rev-company">VP Brand &bull; Horizon Mobility</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rev-card">
+                            <p>&ldquo;The speed, creative courage, and technical finish were extraordinary. Stackly is in a league of their own.&rdquo;</p>
+                            <div class="rev-user">
+                                <img src="assets/images/user4.webp" alt="James Thornton">
+                                <div>
+                                    <h4>James Thornton</h4>
+                                    <span class="rev-company">Founder &bull; Thornton Capital</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rev-card">
+                            <p>&ldquo;Working with Stackly was effortless. The client dashboard kept us aligned on every sprint milestone and deliverable approval.&rdquo;</p>
+                            <div class="rev-user">
+                                <img src="assets/images/user1.webp" alt="Anya Sharma">
+                                <div>
+                                    <h4>Anya Sharma</h4>
+                                    <span class="rev-company">Co-Founder &bull; Luma Spatial AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rev-dots">
+                    <span class="rev-dot active"></span>
+                    <span class="rev-dot"></span>
+                    <span class="rev-dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">GLOBAL RECOGNITION</span>
+                <h2 class="section-title">The Stackly <span>Trophy Cabinet</span></h2>
+                <p class="section-subtitle">Our obsession with craft and commercial effectiveness is recognized across the world's most prestigious design stages.</p>
+            </div>
+
+            <div class="trophy-cabinet-grid">
+
+                <div class="trophy-card anim-slide-left">
+                    <i class="fas fa-trophy"></i>
+                    <h4>Red Dot: Best of the Best</h4>
+                    <span>Brand &amp; Communication 2026</span>
+                </div>
+
+                <div class="trophy-card anim-slide-up">
+                    <i class="fas fa-award"></i>
+                    <h4>Cannes Lions Gold</h4>
+                    <span>Design Craft &amp; Typography 2025</span>
+                </div>
+
+                <div class="trophy-card anim-slide-up">
+                    <i class="fas fa-gem"></i>
+                    <h4>D&amp;AD Yellow Pencil</h4>
+                    <span>Spatial &amp; Tactile Packaging 2025</span>
+                </div>
+
+                <div class="trophy-card anim-slide-right">
+                    <i class="fas fa-star"></i>
+                    <h4>Awwwards Site of the Year</h4>
+                    <span>Agency Nominee &bull; 6x SOTD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px;">
+                <div>
+                    <span class="section-eyebrow">DESIGN PERSPECTIVES</span>
+                    <h2 class="section-title">Insights From The <span>Stackly Journal</span></h2>
+                    <p class="section-subtitle">Deep dives on typography systems, sustainable tactile production, and the future of brand architecture.</p>
+                </div>
+                <a href="blog.html" class="btn btn-outline">Read All Articles &rarr;</a>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card anim-slide-left">
+                    <div class="project-thumb-frame">
+                        <img src="assets/images/blog_typography.webp" alt="Variable Typography">
+                        <span class="project-cat-badge">Typography</span>
+                    </div>
+                    <div class="project-info-body">
+                        <div>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-bottom: 6px;">SEPTEMBER 12, 2026 &bull; 6 MIN READ</span>
+                            <h3>The Architecture of Variable Typography in Luxury Branding</h3>
+                            <p>Why static font files are dead, and how fluid optical sizing defines modern prestige identities.</p>
+                        </div>
+                        <div class="project-metric-row">
+                            <span style="font-size: 0.82rem; font-weight: 600; color: var(--primary-green);">By Arjun Rathore</span>
+                            <a href="blog.html" style="font-weight: 700; color: var(--accent-mint); font-size: 0.85rem;" data-cursor="READ">Read Essay &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card anim-slide-up" style="transition-delay: 0.1s;">
+                    <div class="project-thumb-frame">
+                        <img src="assets/images/blog_sustainable.webp" alt="Sustainable Tactile Packaging">
+                        <span class="project-cat-badge">Packaging</span>
+                    </div>
+                    <div class="project-info-body">
+                        <div>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-bottom: 6px;">SEPTEMBER 04, 2026 &bull; 8 MIN READ</span>
+                            <h3>Tactile Minimalism: Zero-Plastic Packaging That Still Feels Decadent</h3>
+                            <p>Material engineering meets haute unboxing: an exploration of plant-based foils and recycled cotton rag papers.</p>
+                        </div>
+                        <div class="project-metric-row">
+                            <span style="font-size: 0.82rem; font-weight: 600; color: var(--primary-green);">By Meera Krishnan</span>
+                            <a href="blog.html" style="font-weight: 700; color: var(--accent-mint); font-size: 0.85rem;" data-cursor="READ">Read Essay &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card anim-slide-right" style="transition-delay: 0.2s;">
+                    <div class="project-thumb-frame">
+                        <img src="assets/images/blog_kinetic_branding.webp" alt="Kinetic Motion Branding">
+                        <span class="project-cat-badge">Motion &bull; Identity</span>
+                    </div>
+                    <div class="project-info-body">
+                        <div>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-bottom: 6px;">AUGUST 28, 2026 &bull; 5 MIN READ</span>
+                            <h3>Kinetic Branding: Designing Fluid Living Identities for Digital Ecosystems</h3>
+                            <p>How forward-thinking brands are moving beyond static logomarks toward fluid, responsive motion design systems.</p>
+                        </div>
+                        <div class="project-metric-row">
+                            <span style="font-size: 0.82rem; font-weight: 600; color: var(--primary-green);">By Rohan Varma</span>
+                            <a href="blog.html" style="font-weight: 700; color: var(--accent-mint); font-size: 0.85rem;" data-cursor="READ">Read Essay &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="responsive-cta-banner anim-zoom-in">
+                <div class="responsive-cta-content">
+                    <span class="section-eyebrow sandal" style="margin-bottom: 8px;">READY TO ELEVATE YOUR BRAND?</span>
+                    <h2>Let’s Build An Iconic Brand That Dominates Your Sector</h2>
+                    <p>Our Q4 design sprint calendar is currently accepting select enterprise inquiries. Schedule a 30-minute discovery session with our founding partners.</p>
+                </div>
+                <div class="responsive-cta-actions">
+                    <a href="contact.html" class="btn btn-accent">Schedule Discovery Call &rarr;</a>
+                    <a href="get-started.html" class="btn btn-glass">Start A Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="video-modal-backdrop" id="videoModal">
+        <div class="video-modal-box">
+            <button class="video-modal-close" id="videoModalClose" aria-label="Close Showreel">
+                <i class="fas fa-times"></i>
+            </button>
+            <video id="modalVideoPlayer" class="video-modal-player" controls preload="metadata">
+                <source src="assets/home.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand-col">
+                    <a href="index.html">
+                        <img src="assets/logo.webp" alt="Stackly Studio">
+                    </a>
+                    <p>Stackly is a premier brand design agency engineering bespoke identity systems, tactile packaging, and high-performance digital flagships for global category leaders.</p>
+                    <div class="footer-socials">
+                        <a href="404.html" class="footer-social-btn" title="Follow us on X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="404.html" class="footer-social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="404.html" class="footer-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="404.html" class="footer-social-btn" title="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="404.html" class="footer-social-btn" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <div class="footer-links-list">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Portals &amp; Legal</h4>
+                    <div class="footer-links-list">
+                        <a href="404.html">Privacy Policy</a>
+                        <a href="404.html">Terms of Engagement</a>
+                        <a href="404.html">Client Security Protocol</a>
+                        <a href="404.html">Intellectual Property Rights</a>
+                        <a href="404.html">Brand Governance Guidelines</a>
+                        <a href="404.html">Cookie Policy &amp; Disclosures</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Salem Studio HQ</h4>
+                    <p class="footer-address-text">
+                        <i class="fas fa-map-marker-alt" style="color: var(--accent-mint); margin-right: 8px;"></i>
+                        MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008
+                    </p>
+                    <p class="footer-address-text">
+                        <i class="fas fa-envelope" style="color: var(--accent-mint); margin-right: 8px;"></i>
+                        <a href="contact.html" style="color: #ffffff;">hello@stackly.design</a>
+                    </p>
+                    <p class="footer-address-text">
+                        <i class="fas fa-phone" style="color: var(--accent-mint); margin-right: 8px;"></i>
+                        <a href="contact.html" style="color: #ffffff;">+91 98765 43210</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div>&copy; 2026 Stackly Brand Design Agency. All Rights Reserved. Crafted with bespoke precision.</div>
+                <div>Salem HQ &bull; Global Client Delivery</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

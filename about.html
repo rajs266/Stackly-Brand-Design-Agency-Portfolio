@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Atelier &amp; Philosophy | Stackly - Brand Design Agency</title>
+    <link rel="icon" href="assets/top-logo.webp" type="image/webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo" title="Stackly Home">
+                <img src="assets/logo.webp" alt="Stackly Studio">
+            </a>
+
+            <nav class="nav-links-wrap">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-cta-actions">
+                <a href="signin.html" class="btn btn-outline" style="padding: 8px 18px; font-size: 0.85rem;">Sign In</a>
+                <a href="get-started.html" class="btn btn-accent" style="padding: 8px 20px; font-size: 0.85rem;">Get Started</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="mobile-drawer-header">
+            <a href="index.html" class="brand-logo" title="Stackly Studio Home">
+                <img src="assets/logo.webp" alt="Stackly Studio">
+            </a>
+            <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Mobile Menu"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="mobile-drawer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-drawer-actions">
+            <a href="signin.html" class="btn btn-outline btn-block">Sign In</a>
+            <a href="get-started.html" class="btn btn-accent btn-block">Get Started</a>
+        </div>
+    </div>
+
+    <section class="page-hero-banner hero-bg-about">
+        <div class="container anim-slide-up">
+            <span class="page-hero-eyebrow"><i class="fas fa-sparkles"></i> STUDIO MANIFESTO &bull; CRAFT</span>
+            <h1 class="page-hero-title">
+                We Forge Iconic Brands That <span>Command The Market</span>
+            </h1>
+            <p class="page-hero-subtitle">
+                Headquartered in Salem, Tamil Nadu, Stackly is an independent brand design consultancy partnering with visionary founders worldwide to sculpt timeless identity systems, custom typography, and high-performance digital flagships.
+            </p>
+            <div class="page-hero-stats-row">
+                <div class="page-hero-stat-item">
+                    <span class="page-hero-stat-value">140+</span>
+                    <span class="page-hero-stat-label">Enterprise Rebrands</span>
+                </div>
+                <div class="page-hero-stat-item">
+                    <span class="page-hero-stat-value">28</span>
+                    <span class="page-hero-stat-label">Global Design Awards</span>
+                </div>
+                <div class="page-hero-stat-item">
+                    <span class="page-hero-stat-value">8 Yrs</span>
+                    <span class="page-hero-stat-label">Disciplined Craft</span>
+                </div>
+                <div class="page-hero-stat-item">
+                    <span class="page-hero-stat-value">99.4%</span>
+                    <span class="page-hero-stat-label">Client Retention</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="background: #ffffff; border-bottom: 1px solid var(--border-subtle); padding: 16px 0;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 16px; text-align: center;" class="anim-slide-up">
+                <div class="studio-clock-col">
+                    <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 1px;">SALEM HQ (INDIA)</span>
+                    <strong class="studio-clock-time" data-tz="Asia/Kolkata" style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; color: var(--primary-green); margin-top: 4px;">--:--:--</strong>
+                </div>
+                <div class="studio-clock-col">
+                    <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 1px;">LONDON STUDIO</span>
+                    <strong class="studio-clock-time" data-tz="Europe/London" style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; color: var(--primary-green); margin-top: 4px;">--:--:--</strong>
+                </div>
+                <div class="studio-clock-col">
+                    <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 1px;">NEW YORK DESK</span>
+                    <strong class="studio-clock-time" data-tz="America/New_York" style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; color: var(--primary-green); margin-top: 4px;">--:--:--</strong>
+                </div>
+                <div class="studio-clock-col">
+                    <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 1px;">TOKYO PARTNER</span>
+                    <strong class="studio-clock-time" data-tz="Asia/Tokyo" style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; color: var(--primary-green); margin-top: 4px;">--:--:--</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="agency-marquee-section">
+        <div class="agency-marquee-track">
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Veda Living <span class="marquee-pill">Cosmetics</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Apex Wealth Platform <span class="marquee-pill">Fintech</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Solstice Architecture <span class="marquee-pill">Spatial</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Artisan Roast Co. <span class="marquee-pill">DTC Retail</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Aurelia Haute Couture <span class="marquee-pill">Luxury</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Horizon Mobility <span class="marquee-pill">EV &amp; Auto</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Chronos Swiss Horology <span class="marquee-pill">Timepieces</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Luma Spatial AI <span class="marquee-pill">Compute</span></span>
+
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Veda Living <span class="marquee-pill">Cosmetics</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Apex Wealth Platform <span class="marquee-pill">Fintech</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Solstice Architecture <span class="marquee-pill">Spatial</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Artisan Roast Co. <span class="marquee-pill">DTC Retail</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Aurelia Haute Couture <span class="marquee-pill">Luxury</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Horizon Mobility <span class="marquee-pill">EV &amp; Auto</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Chronos Swiss Horology <span class="marquee-pill">Timepieces</span></span>
+            <span class="marquee-brand-item"><i class="fas fa-sparkles"></i> Luma Spatial AI <span class="marquee-pill">Compute</span></span>
+        </div>
+    </div>
+
+    <section class="section atelier-showcase-section" id="atelierCreativeShowcase">
+        <div class="container">
+            <div class="atelier-showcase-grid">
+
+                <div class="atelier-staggered-images anim-slide-up">
+                    <div class="staggered-portrait-card card-primary">
+                        <div class="portrait-img-wrap">
+                            <img src="assets/images/hero_candidate_1.webp" alt="Stackly Creative Director at Salem Atelier" class="img-crystal-clear">
+                            <div class="portrait-subtle-gradient"></div>
+                        </div>
+                        <div class="portrait-floating-badge">
+                            <i class="fas fa-sparkles text-green"></i>
+                            <span>Salem Craft Atelier</span>
+                        </div>
+                    </div>
+
+                    <div class="staggered-portrait-card card-secondary">
+                        <div class="portrait-img-wrap">
+                            <img src="assets/images/team_collab.webp" alt="Stackly Brand Sprint Workshop" class="img-crystal-clear">
+                            <div class="portrait-subtle-gradient"></div>
+                        </div>
+                        <div class="portrait-floating-badge badge-right">
+                            <i class="fas fa-bolt text-green"></i>
+                            <span>Live Sprints</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atelier-showcase-content anim-slide-up">
+                    <div class="atelier-eyebrow-tag">
+                        <span class="eyebrow-pulse-dot"></span>
+                        <span>Passionate. Disciplined. Impactful.</span>
+                    </div>
+
+                    <h2 class="atelier-showcase-title">
+                        Fueling Exceptional Brands Through <span class="text-green-accent">Radical</span> Craft
+                    </h2>
+
+                    <p class="atelier-showcase-desc">
+                        Stackly sculpts bespoke brand systems, proprietary typography, and tactile physical substrates engineered to command market authority and sustainable pricing power.
+                    </p>
+
+                    <div class="atelier-checklist-grid">
+                        <div class="checklist-col">
+                            <div class="checklist-item">
+                                <span class="green-bullet"></span>
+                                <span>Bespoke Typography Systems</span>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="green-bullet"></span>
+                                <span>Tactile Physical Substrates</span>
+                            </div>
+                        </div>
+                        <div class="checklist-col">
+                            <div class="checklist-item">
+                                <span class="green-bullet"></span>
+                                <span>Commercial Market Moats</span>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="green-bullet"></span>
+                                <span>Zero Generic UI Boilerplates</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="atelier-action-dock">
+                        <div class="atelier-founder-card">
+                            <div class="founder-avatar-wrap">
+                                <img src="assets/images/founder_portrait.webp" alt="Arjun Rathore - Founder &amp; CCO">
+                                <span class="founder-status-indicator"></span>
+                            </div>
+                            <div class="founder-details">
+                                <h4 class="founder-name">Arjun Rathore</h4>
+                                <span class="founder-role">Founder &bull; Chief Creative Officer</span>
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="btn btn-green-action">
+                            <span>Contact Us</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="salemLaboratory" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">SALEM CRAFT ATELIER</span>
+                <h2 class="section-title">Inside Our <span>Prototyping Laboratory</span></h2>
+                <p class="section-subtitle">Explore our physical workshop in Chinna Thirupathi, Salem where physical substrates meet digital precision.</p>
+            </div>
+
+            <div class="atelier-lab-grid anim-zoom-in">
+
+                <div class="atelier-lab-card">
+                    <div class="atelier-lab-thumb">
+                        <img src="assets/images/studio_materials.webp" alt="Substrate and Tooling Press Room">
+                        <span class="lab-hotspot-badge"><i class="fas fa-microscope"></i> ZONE 01 &bull; TACTILE LAB</span>
+                    </div>
+                    <div class="atelier-lab-body">
+                        <h3>Substrate &amp; Tooling Press Room</h3>
+                        <p>Calibrated 5000K daylight inspection for 900gsm cotton stocks, deboss tolerances, and metallic foils.</p>
+                        <div class="lab-specs-tag-row">
+                            <span class="lab-tag-pill">FSC 900gsm Cotton</span>
+                            <span class="lab-tag-pill">Pantone Lab Match</span>
+                            <span class="lab-tag-pill">Hot-Foil Tooling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atelier-lab-card">
+                    <div class="atelier-lab-thumb">
+                        <img src="assets/images/hero_creative_workspace.webp" alt="Variable Typography Foundry">
+                        <span class="lab-hotspot-badge"><i class="fas fa-bezier-curve"></i> ZONE 02 &bull; FOUNDRY</span>
+                    </div>
+                    <div class="atelier-lab-body">
+                        <h3>Variable Type Foundry &amp; Color Rig</h3>
+                        <p>Custom letterform axes and vector identity systems sculpted on dual 8K calibrated displays.</p>
+                        <div class="lab-specs-tag-row">
+                            <span class="lab-tag-pill">Bezier Vector Masters</span>
+                            <span class="lab-tag-pill">Dual 8K Displays</span>
+                            <span class="lab-tag-pill">Variable Font Foundries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atelier-lab-card">
+                    <div class="atelier-lab-thumb">
+                        <img src="assets/images/studio_office.webp" alt="Packaging Engineering Workshop">
+                        <span class="lab-hotspot-badge"><i class="fas fa-cubes"></i> ZONE 03 &bull; UNBOXING</span>
+                    </div>
+                    <div class="atelier-lab-body">
+                        <h3>Packaging Structural Engineering</h3>
+                        <p>Precision CAD dielines, magnetic closures, and luxury unboxing structures engineered with &plusmn;0.1mm accuracy.</p>
+                        <div class="lab-specs-tag-row">
+                            <span class="lab-tag-pill">CAD Dieline Tables</span>
+                            <span class="lab-tag-pill">&plusmn;0.1mm Precision</span>
+                            <span class="lab-tag-pill">Magnetic Closure Rigs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">PROPRIETARY SUBSTRATES</span>
+                <h2 class="section-title">The Studio Specimen <span>Vault</span></h2>
+                <p class="section-subtitle">Every identity is grounded in tangible materiality. Select a substrate to inspect calibrated craft specs.</p>
+            </div>
+
+            <div class="specimen-vault-deck anim-zoom-in">
+
+                <div class="specimen-tabs-row" id="specimenTabs">
+                    <button class="specimen-tab-trigger active" data-specimen="0">
+                        <span class="tab-tag">01 &bull; SUBSTRATE</span>
+                        <span class="tab-label">FSC 900gsm Cotton</span>
+                    </button>
+                    <button class="specimen-tab-trigger" data-specimen="1">
+                        <span class="tab-tag">02 &bull; TOOLING</span>
+                        <span class="tab-label">24K Micro-Foil</span>
+                    </button>
+                    <button class="specimen-tab-trigger" data-specimen="2">
+                        <span class="tab-tag">03 &bull; FOUNDRY</span>
+                        <span class="tab-label">Variable Font Axes</span>
+                    </button>
+                    <button class="specimen-tab-trigger" data-specimen="3">
+                        <span class="tab-tag">04 &bull; STRUCTURE</span>
+                        <span class="tab-label">Rigid Magnetic Box</span>
+                    </button>
+                </div>
+
+                <div class="specimen-display-panel" id="specimenPanel">
+                    <div class="specimen-panel-thumb">
+                        <img id="specimenImg" src="assets/images/studio_materials.webp" alt="FSC Cotton Substrate Specimen">
+                        <span class="specimen-floating-badge" id="specimenBadge"><i class="fas fa-microscope"></i> LAB AUDITED &bull; SPEC 01</span>
+                    </div>
+                    <div class="specimen-panel-body">
+                        <span class="section-eyebrow sandal" id="specimenCat" style="margin-bottom: 6px; display: inline-block;">TACTILE SUBSTRATE</span>
+                        <h3 id="specimenTitle">FSC 900gsm Uncoated Cotton Board</h3>
+                        <p id="specimenDesc">Triple-ply organic cotton stock mill-certified for deep blind debossing and edge gilding.</p>
+
+                        <div class="specimen-specs-triad">
+                            <div class="specimen-spec-box">
+                                <span class="spec-k" id="specK1Title">Grammage</span>
+                                <span class="spec-v" id="specK1Val">900 GSM Heavy</span>
+                            </div>
+                            <div class="specimen-spec-box">
+                                <span class="spec-k" id="specK2Title">Deboss Depth</span>
+                                <span class="spec-v" id="specK2Val">0.85mm Calibrated</span>
+                            </div>
+                            <div class="specimen-spec-box">
+                                <span class="spec-k" id="specK3Title">Sustainability</span>
+                                <span class="spec-v" id="specK3Val">100% Recycled FSC</span>
+                            </div>
+                        </div>
+
+                        <div class="specimen-finishes-row">
+                            <span class="specimen-chip"><i class="fas fa-check"></i> In-House Proofed</span>
+                            <span class="specimen-chip"><i class="fas fa-check"></i> Non-Toxic Soy Inks</span>
+                            <span class="specimen-chip"><i class="fas fa-check"></i> Mill-Direct Spec</span>
+                        </div>
+
+                        <div>
+                            <a href="contact.html" class="btn btn-outline" style="padding: 10px 22px; font-size: 0.85rem;"><i class="fas fa-box-open" style="margin-right: 6px; color: var(--primary-lime);"></i> Request Material Swatch Box &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">CREATIVE DIRECTORS</span>
+                <h2 class="section-title">The Minds Behind <span>Stackly Studio</span></h2>
+                <p class="section-subtitle">A collective of seasoned brand strategists, typographers, art directors, and creative technologists.</p>
+            </div>
+
+            <div class="team-interactive-grid">
+
+                <div class="team-interactive-card anim-slide-up">
+                    <div class="team-photo-frame">
+                        <img src="assets/images/founder_portrait.webp" alt="Arjun Rathore">
+                        <span class="team-role-pill">Founder &bull; CCO</span>
+                        <div class="team-social-dock">
+                            <a href="404.html" class="team-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="404.html" class="team-social-btn" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="404.html" class="team-social-btn" title="Behance"><i class="fab fa-behance"></i></a>
+                            <a href="contact.html" class="team-social-btn" title="Contact"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Arjun Rathore</h3>
+                        <span class="team-sub-title">Chief Creative Officer</span>
+                        <p>14+ years directing enterprise rebrands across Cannes Lions &amp; TDC.</p>
+                        <div class="team-meta-row">
+                            <span><i class="fas fa-location-dot" style="color: var(--primary-lime); margin-right: 4px;"></i> Salem HQ</span>
+                            <span>14+ Yrs Exp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-interactive-card anim-slide-up" style="transition-delay: 0.1s;">
+                    <div class="team-photo-frame">
+                        <img src="assets/images/director_portrait.webp" alt="Meera Krishnan">
+                        <span class="team-role-pill">Managing Partner</span>
+                        <div class="team-social-dock">
+                            <a href="404.html" class="team-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="404.html" class="team-social-btn" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="404.html" class="team-social-btn" title="Behance"><i class="fab fa-behance"></i></a>
+                            <a href="contact.html" class="team-social-btn" title="Contact"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Meera Krishnan</h3>
+                        <span class="team-sub-title">Head of Strategy &amp; Positioning</span>
+                        <p>Specialist in commercial brand equity, positioning &amp; IP governance.</p>
+                        <div class="team-meta-row">
+                            <span><i class="fas fa-location-dot" style="color: var(--primary-lime); margin-right: 4px;"></i> Salem HQ</span>
+                            <span>11+ Yrs Exp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-interactive-card anim-slide-up" style="transition-delay: 0.2s;">
+                    <div class="team-photo-frame">
+                        <img src="assets/images/hero_candidate_1.webp" alt="Ananya Sen">
+                        <span class="team-role-pill">Design Director</span>
+                        <div class="team-social-dock">
+                            <a href="404.html" class="team-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="404.html" class="team-social-btn" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="404.html" class="team-social-btn" title="Behance"><i class="fab fa-behance"></i></a>
+                            <a href="contact.html" class="team-social-btn" title="Contact"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Ananya Sen</h3>
+                        <span class="team-sub-title">Brand Identity &amp; Typography Lead</span>
+                        <p>Lead architect of bespoke editorial typography &amp; variable letterforms.</p>
+                        <div class="team-meta-row">
+                            <span><i class="fas fa-location-dot" style="color: var(--primary-lime); margin-right: 4px;"></i> Salem HQ</span>
+                            <span>9+ Yrs Exp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-interactive-card anim-slide-up" style="transition-delay: 0.3s;">
+                    <div class="team-photo-frame">
+                        <img src="assets/images/design_lead.webp" alt="Rohan Varma">
+                        <span class="team-role-pill">Director of Craft</span>
+                        <div class="team-social-dock">
+                            <a href="404.html" class="team-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="404.html" class="team-social-btn" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="404.html" class="team-social-btn" title="Behance"><i class="fab fa-behance"></i></a>
+                            <a href="contact.html" class="team-social-btn" title="Contact"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Rohan Varma</h3>
+                        <span class="team-sub-title">Digital Flagships &amp; Motion</span>
+                        <p>Digital flagships, spatial micro-interactions &amp; conversion systems.</p>
+                        <div class="team-meta-row">
+                            <span><i class="fas fa-location-dot" style="color: var(--primary-lime); margin-right: 4px;"></i> Salem HQ</span>
+                            <span>10+ Yrs Exp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">OUR JOURNEY</span>
+                <h2 class="section-title">Milestones Of <span>Disciplined Craft</span></h2>
+                <p class="section-subtitle">From a boutique letterpress laboratory in Salem to an internationally recognized branding consultancy.</p>
+            </div>
+
+            <div class="timeline-pipeline-track anim-slide-up">
+
+                <div class="timeline-pipeline-card">
+                    <div class="timeline-node-header">
+                        <span class="timeline-year-callout">2018</span>
+                        <span class="timeline-node-pin"></span>
+                    </div>
+                    <span class="section-eyebrow" style="margin-bottom: 6px;">CHINNA THIRUPATHI</span>
+                    <h4>Studio Genesis in Salem</h4>
+                    <p>Founded in Salem with a vintage proofing press for artisanal packaging.</p>
+                    <span class="timeline-stat-tag"><i class="fas fa-seedling"></i> Studio Genesis 01</span>
+                </div>
+
+                <div class="timeline-pipeline-card" style="transition-delay: 0.1s;">
+                    <div class="timeline-node-header">
+                        <span class="timeline-year-callout">2021</span>
+                        <span class="timeline-node-pin"></span>
+                    </div>
+                    <span class="section-eyebrow sandal" style="margin-bottom: 6px;">INTERNATIONAL HONOR</span>
+                    <h4>Cannes Design Bronze</h4>
+                    <p>Cannes Lions Design Bronze for Veda Living; custom type foundry launch.</p>
+                    <span class="timeline-stat-tag"><i class="fas fa-trophy"></i> Cannes Lions 2021</span>
+                </div>
+
+                <div class="timeline-pipeline-card" style="transition-delay: 0.2s;">
+                    <div class="timeline-node-header">
+                        <span class="timeline-year-callout">2024</span>
+                        <span class="timeline-node-pin"></span>
+                    </div>
+                    <span class="section-eyebrow" style="margin-bottom: 6px;">LONDON &amp; ZURICH</span>
+                    <h4>Global Synchronized Pods</h4>
+                    <p>Studio annexes in London and Zurich; $400M+ client equity unlocked.</p>
+                    <span class="timeline-stat-tag"><i class="fas fa-globe"></i> 100+ Rebrands</span>
+                </div>
+
+                <div class="timeline-pipeline-card" style="transition-delay: 0.3s;">
+                    <div class="timeline-node-header">
+                        <span class="timeline-year-callout">2026</span>
+                        <span class="timeline-node-pin"></span>
+                    </div>
+                    <span class="section-eyebrow sandal" style="margin-bottom: 6px;">TOKENIZED FUTURE</span>
+                    <h4>Living Design Token Lab</h4>
+                    <p>Living design token engine and guidelines with $650M+ value architected.</p>
+                    <span class="timeline-stat-tag"><i class="fas fa-award"></i> $650M+ Client Equity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header text-center anim-slide-up">
+                <span class="section-eyebrow sandal">CLIENT VERDICTS</span>
+                <h2 class="section-title">Endorsements From <span>Industry Founders</span></h2>
+                <p class="section-subtitle">Real founder feedback on commercial defensibility, conversion leaps, and category authority.</p>
+            </div>
+
+            <div class="verdicts-multislide-container anim-zoom-in">
+                <div class="verdicts-multislide-viewport">
+                    <div class="verdicts-multislide-track" id="verdictsMultiTrack">
+
+                        <div class="verdicts-deck-page">
+
+                            <div class="verdict-compact-card">
+                                <div>
+                                    <div class="short-card-header">
+                                        <div class="stars-rating-row">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="verified-founder-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                                    </div>
+                                    <span class="impact-metric-pill">+310% DTC Revenue Surge</span>
+                                    <p class="verdict-card-quote">
+                                        Stackly transformed our commercial presence. The unboxing architecture drove an immediate 310% DTC revenue leap.
+                                    </p>
+                                </div>
+                                <div class="short-client-profile">
+                                    <img src="assets/images/user1.webp" alt="Priya Nair" class="short-client-avatar">
+                                    <div class="short-client-meta">
+                                        <strong>Priya Nair</strong>
+                                        <span>Founder &bull; Veda Living Skincare</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verdict-compact-card">
+                                <div>
+                                    <div class="short-card-header">
+                                        <div class="stars-rating-row">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="verified-founder-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                                    </div>
+                                    <span class="impact-metric-pill">Red Dot Best 2026</span>
+                                    <p class="verdict-card-quote">
+                                        Their typographic discipline and strategic rigor gave us an unmatched economic moat. Exceptional partnership.
+                                    </p>
+                                </div>
+                                <div class="short-client-profile">
+                                    <img src="assets/images/user2.webp" alt="Alexander Wright" class="short-client-avatar">
+                                    <div class="short-client-meta">
+                                        <strong>Alexander Wright</strong>
+                                        <span>MD &bull; Apex Wealth Zurich</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verdict-compact-card">
+                                <div>
+                                    <div class="short-card-header">
+                                        <div class="stars-rating-row">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="verified-founder-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                                    </div>
+                                    <span class="impact-metric-pill">Awwwards Site of Year</span>
+                                    <p class="verdict-card-quote">
+                                        The bespoke variable typeface and linen cloth monograph captured 20 years of practice with monolithic perfection.
+                                    </p>
+                                </div>
+                                <div class="short-client-profile">
+                                    <img src="assets/images/user3.webp" alt="Marcus Chen" class="short-client-avatar">
+                                    <div class="short-client-meta">
+                                        <strong>Marcus Chen</strong>
+                                        <span>Principal &bull; Solstice</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="verdicts-deck-page">
+
+                            <div class="verdict-compact-card">
+                                <div>
+                                    <div class="short-card-header">
+                                        <div class="stars-rating-row">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="verified-founder-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                                    </div>
+                                    <span class="impact-metric-pill">+220% Subscriptions</span>
+                                    <p class="verdict-card-quote">
+                                        Our embossed airtight tin packaging and headless store increased repeat subscriptions and customer LTV by 220%.
+                                    </p>
+                                </div>
+                                <div class="short-client-profile">
+                                    <img src="assets/images/user4.webp" alt="Elena Rossi" class="short-client-avatar">
+                                    <div class="short-client-meta">
+                                        <strong>Elena Rossi</strong>
+                                        <span>Co-Founder &bull; Artisan Roast</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verdict-compact-card">
+                                <div>
+                                    <div class="short-card-header">
+                                        <div class="stars-rating-row">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="verified-founder-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                                    </div>
+                                    <span class="impact-metric-pill">100% Collector Sell-Out</span>
+                                    <p class="verdict-card-quote">
+                                        From kinetic tourbillon stingers to VIP certificates, Stackly executed luxury horology with surgical precision.
+                                    </p>
+                                </div>
+                                <div class="short-client-profile">
+                                    <img src="assets/images/cand_1508214751196-bcfd4ca60f91.webp" alt="Henri Dumont" class="short-client-avatar">
+                                    <div class="short-client-meta">
+                                        <strong>Henri Dumont</strong>
+                                        <span>Heritage Director &bull; Chronos</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verdict-compact-card">
+                                <div>
+                                    <div class="short-card-header">
+                                        <div class="stars-rating-row">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="verified-founder-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                                    </div>
+                                    <span class="impact-metric-pill">Vogue Global Feature</span>
+                                    <p class="verdict-card-quote">
+                                        Sub-second page speeds and haute editorial layouts that convert discerning luxury buyers effortlessly.
+                                    </p>
+                                </div>
+                                <div class="short-client-profile">
+                                    <img src="assets/images/cand_1531746020798-e6953c6e8e04.webp" alt="Sophie Laurent" class="short-client-avatar">
+                                    <div class="short-client-meta">
+                                        <strong>Sophie Laurent</strong>
+                                        <span>Creative Lead &bull; Aurelia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="verdict-controls-bar">
+                    <button class="verdict-nav-btn" id="prevVerdictsBtn" aria-label="Previous Reviews">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+
+                    <div class="verdict-indicators">
+                        <button class="verdict-indicator-btn active" data-deck="0">01 &bull; FOUNDERS ALPHA</button>
+                        <button class="verdict-indicator-btn" data-deck="1">02 &bull; ENTERPRISE BETA</button>
+                    </div>
+
+                    <button class="verdict-nav-btn" id="nextVerdictsBtn" aria-label="Next Reviews">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="responsive-cta-banner anim-zoom-in">
+                <span class="section-eyebrow sandal">START YOUR TRANSFORMATION</span>
+                <h2>Ready To Elevate <span>Your Brand?</span></h2>
+                <p>Book a strategic discovery call with our founding partners. We'll audit your current positioning and architect a bespoke roadmap for category leadership.</p>
+                <div class="responsive-cta-buttons">
+                    <a href="get-started.html" class="btn btn-primary" style="padding: 14px 28px;">Start Project Brief &rarr;</a>
+                    <a href="contact.html" class="btn btn-outline" style="padding: 14px 28px; background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.25); color: #ffffff;">Schedule Discovery Call</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html"><img src="assets/logo.webp" alt="Stackly Studio"></a>
+                    <p>Stackly is a premier brand design agency engineering bespoke identity systems, tactile packaging, and high-performance digital flagships.</p>
+                    <div class="footer-socials">
+                        <a href="404.html" class="footer-social-btn" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="404.html" class="footer-social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="404.html" class="footer-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="404.html" class="footer-social-btn" title="Behance"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <div class="footer-links-list">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Portals &amp; Legal</h4>
+                    <div class="footer-links-list">
+                        <a href="404.html">Privacy Policy</a>
+                        <a href="404.html">Terms of Engagement</a>
+                        <a href="404.html">Client Security Protocol</a>
+                        <a href="404.html">Intellectual Property Rights</a>
+                        <a href="404.html">Brand Governance Guidelines</a>
+                        <a href="404.html">Cookie Policy &amp; Disclosures</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Salem Studio HQ</h4>
+                    <p class="footer-address-text">
+                        <i class="fas fa-map-marker-alt" style="color: var(--accent-mint); margin-right: 8px;"></i>
+                        MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008
+                    </p>
+                    <p class="footer-address-text">
+                        <i class="fas fa-envelope" style="color: var(--accent-mint); margin-right: 8px;"></i>
+                        <a href="contact.html" style="color: #ffffff;">hello@stackly.design</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom-bar">
+                <div>&copy; 2026 Stackly Brand Design Agency. All Rights Reserved.</div>
+                <div>Salem HQ &bull; Global Client Delivery</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

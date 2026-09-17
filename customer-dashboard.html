@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal Dashboard | Stackly - Brand Design Agency</title>
+    <link rel="icon" href="assets/top-logo.webp" type="image/webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-page-body">
+
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-gyro">
+        <div class="cursor-ring-inner"></div>
+        <div class="cursor-ring-dashed"></div>
+    </div>
+
+    <header class="dash-navbar">
+        <div class="dash-nav-left">
+            <button class="dash-sidebar-toggle" id="dashSidebarToggle" aria-label="Toggle Dashboard Menu" title="Toggle Menu">
+                <i class="fas fa-bars icon-bars"></i>
+                <i class="fas fa-times icon-times"></i>
+            </button>
+            <a href="index.html" class="brand-logo" title="Stackly Studio">
+                <img src="assets/logo.webp" alt="Stackly Studio">
+            </a>
+            <span class="dash-nav-badge" style="background: var(--bg-light-mint); color: var(--primary-green); border: 1px solid rgba(16, 185, 129, 0.3);">
+                CLIENT WORKSPACE
+            </span>
+        </div>
+
+        <div class="dash-nav-right">
+
+            <a href="index.html" class="btn btn-outline dash-nav-home-btn" title="Back to Studio Home">
+                <i class="fas fa-home"></i> <span class="dash-home-label">Studio Home</span>
+            </a>
+
+            <div class="dash-notif-wrap">
+                <button class="dash-bell-btn" id="dashBellBtn" aria-label="Notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="bell-badge-pulse">3</span>
+                </button>
+                <div class="dash-notif-dropdown" id="dashNotifDropdown">
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 1px solid var(--border-subtle); margin-bottom: 10px;">
+                        <strong style="font-size: 0.85rem; color: var(--primary-green);">Sprint Alerts (3)</strong>
+                        <span style="font-size: 0.72rem; color: var(--text-muted); cursor: pointer;">Mark Read</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <a href="404.html" style="display: flex; gap: 10px; font-size: 0.8rem; color: var(--text-dark);">
+                            <i class="fas fa-file-image" style="color: var(--accent-mint); margin-top: 3px;"></i>
+                            <div>
+                                <strong>New Packaging Proof V3</strong>
+                                <p style="font-size: 0.72rem; color: var(--text-muted); margin: 0;">Glass bottle hot foil dieline ready for review.</p>
+                            </div>
+                        </a>
+                        <a href="404.html" style="display: flex; gap: 10px; font-size: 0.8rem; color: var(--text-dark);">
+                            <i class="fas fa-check-circle" style="color: var(--accent-sandal); margin-top: 3px;"></i>
+                            <div>
+                                <strong>Sprint 2 Milestone Cleared</strong>
+                                <p style="font-size: 0.72rem; color: var(--text-muted); margin: 0;">Custom variable font files uploaded to vault.</p>
+                            </div>
+                        </a>
+                        <a href="404.html" style="display: flex; gap: 10px; font-size: 0.8rem; color: var(--text-dark);">
+                            <i class="fas fa-calendar-alt" style="color: #3b82f6; margin-top: 3px;"></i>
+                            <div>
+                                <strong>Design Review Call</strong>
+                                <p style="font-size: 0.72rem; color: var(--text-muted); margin: 0;">Tomorrow at 04:30 PM IST with Arjun.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-nav-user-pill">
+                <div class="dash-user-avatar user-display-avatar">A</div>
+                <div style="line-height: 1.2;">
+                    <strong class="user-display-name" style="font-size: 0.88rem; color: var(--text-dark); display: block;">Arjun Sundaram</strong>
+                    <span class="user-display-email" style="font-size: 0.72rem; color: var(--text-muted);">client@enterprise.com</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="dash-sidebar-backdrop" id="dashSidebarBackdrop"></div>
+
+    <div class="dash-app-layout">
+
+        <aside class="dash-sidebar">
+            <div>
+                <div class="dash-sidebar-user">
+                    <div class="dash-user-avatar user-display-avatar">A</div>
+                    <div style="overflow: hidden;">
+                        <strong class="user-display-name" style="font-size: 0.95rem; color: var(--primary-green); display: block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">Arjun Sundaram</strong>
+                        <span class="user-display-email" style="font-size: 0.72rem; color: var(--text-muted); display: block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">client@enterprise.com</span>
+                        <span style="font-size: 0.68rem; font-weight: 700; color: var(--accent-mint); background: var(--bg-light-mint); padding: 2px 6px; border-radius: 4px; display: inline-block; margin-top: 4px;">
+                            Verified Client Partner
+                        </span>
+                    </div>
+                </div>
+
+                <nav class="dash-sidebar-menu">
+                    <a href="#overview" class="dash-menu-link active" data-tab="overview">
+                        <i class="fas fa-th-large"></i> Sprint Overview
+                    </a>
+                    <a href="#sprints" class="dash-menu-link" data-tab="sprints">
+                        <i class="fas fa-project-diagram"></i> Active Sprints
+                    </a>
+                    <a href="#assets" class="dash-menu-link" data-tab="assets">
+                        <i class="fas fa-folder-open"></i> Brand Asset Vault
+                    </a>
+                    <a href="#approvals" class="dash-menu-link" data-tab="approvals">
+                        <i class="fas fa-check-double"></i> Proof Approvals
+                    </a>
+                    <a href="#billing" class="dash-menu-link" data-tab="billing">
+                        <i class="fas fa-file-invoice-dollar"></i> Retainer &amp; Billing
+                    </a>
+                    <a href="#settings" class="dash-menu-link" data-tab="settings">
+                        <i class="fas fa-cog"></i> Workspace Settings
+                    </a>
+                </nav>
+            </div>
+
+            <div>
+                <a href="#logout" class="dash-menu-link dash-logout-btn" style="color: #ef4444;">
+                    <i class="fas fa-sign-out-alt"></i> Logout Session
+                </a>
+            </div>
+        </aside>
+
+        <main class="dash-main-scroll">
+
+            <div class="dash-tab-pane active" id="tab-overview">
+
+                <div class="dash-stats-grid">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-info">
+                            <h5>ACTIVE SPRINTS</h5>
+                            <strong>02</strong>
+                        </div>
+                        <div class="dash-stat-icon"><i class="fas fa-tasks"></i></div>
+                    </div>
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-info">
+                            <h5>DELIVERABLES READY</h5>
+                            <strong>18</strong>
+                        </div>
+                        <div class="dash-stat-icon"><i class="fas fa-layer-group"></i></div>
+                    </div>
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-info">
+                            <h5>PENDING REVIEWS</h5>
+                            <strong>03</strong>
+                        </div>
+                        <div class="dash-stat-icon" style="color: var(--accent-sandal);"><i class="fas fa-eye"></i></div>
+                    </div>
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-info">
+                            <h5>SPRINT VELOCITY</h5>
+                            <strong>96%</strong>
+                        </div>
+                        <div class="dash-stat-icon" style="color: var(--accent-mint);"><i class="fas fa-chart-line"></i></div>
+                    </div>
+                </div>
+
+                <div style="background: #ffffff; border-radius: var(--radius-md); padding: 26px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm); margin-bottom: 24px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+                        <div>
+                            <span class="section-eyebrow" style="margin-bottom: 4px;">CURRENT ENGAGEMENT</span>
+                            <h3 style="color: var(--primary-green); font-size: 1.35rem; margin: 0;">Sprint 3: Digital Flagship &amp; Web System Architecture</h3>
+                        </div>
+                        <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.88rem; font-weight: 700; color: var(--accent-mint);">
+                            74% Completed &bull; Week 6 of 8
+                        </span>
+                    </div>
+
+                    <div style="height: 8px; background: var(--bg-light-mint); border-radius: 6px; overflow: hidden; margin-bottom: 18px;">
+                        <div style="width: 74%; height: 100%; background: linear-gradient(90deg, var(--accent-mint), var(--accent-sandal));"></div>
+                    </div>
+
+                    <div class="responsive-metrics-grid" style="font-size: 0.82rem; color: var(--text-dark); text-align: left;">
+                        <div><i class="fas fa-check-circle" style="color: var(--accent-mint);"></i> 1. Wireframing: <strong>Signed Off</strong></div>
+                        <div><i class="fas fa-check-circle" style="color: var(--accent-mint);"></i> 2. Visual Systems: <strong>Signed Off</strong></div>
+                        <div><i class="fas fa-spinner fa-spin" style="color: var(--accent-sandal);"></i> 3. Prototype: <strong>In Review</strong></div>
+                        <div><i class="far fa-circle" style="color: var(--text-muted);"></i> 4. QA &amp; Deployment: <strong>Upcoming</strong></div>
+                    </div>
+                </div>
+
+                <div style="background: #ffffff; border-radius: var(--radius-md); padding: 26px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm); margin-bottom: 24px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 10px;">
+                        <div>
+                            <span class="section-eyebrow" style="margin-bottom: 4px;">STUDIO CRAFT VAULT</span>
+                            <h4 style="font-size: 1.2rem; color: var(--primary-green); margin: 0;">Active Sprint Visual Proofs &amp; Spatial Previews</h4>
+                        </div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted); background: var(--bg-canvas); padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border-subtle);">
+                            <i class="fas fa-cubes" style="color: var(--accent-mint); margin-right: 4px;"></i> Salem Atelier 4K Renders
+                        </span>
+                    </div>
+                    <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 18px;">High-fidelity renders, dieline blueprints, and spatial prototypes generated by your dedicated atelier team.</p>
+
+                    <div class="dash-visual-grid">
+
+                        <div class="dash-visual-card">
+                            <div class="dash-visual-thumb">
+                                <img src="assets/images/service_packaging.webp" alt="Packaging Proof" loading="lazy">
+                                <span class="dash-visual-badge sandal"><i class="fas fa-box-open"></i> Sprint 4 &bull; Dieline V3</span>
+                            </div>
+                            <div class="dash-visual-body">
+                                <div class="dash-visual-tags">
+                                    <span class="dash-visual-tag">Luxury Packaging</span>
+                                    <span class="dash-visual-tag">Emboss Plate</span>
+                                    <span class="dash-visual-tag">Pantone 5605 C</span>
+                                </div>
+                                <h5 class="dash-visual-title">Cosmetics Glass Jar &amp; Gold Foil Carton</h5>
+                                <p class="dash-visual-desc">0.4mm tactile raised foil margin dieline for luxury bottle closure and rigid presentation box.</p>
+                                <div class="dash-visual-actions">
+                                    <button type="button" class="btn btn-accent" onclick="document.querySelector('[data-tab=approvals]').click()">
+                                        <i class="fas fa-eye"></i> Review Proof
+                                    </button>
+                                    <a href="404.html" class="btn btn-outline" title="Download Vector Dieline">
+                                        <i class="fas fa-download"></i> Dieline (PDF)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash-visual-card">
+                            <div class="dash-visual-thumb">
+                                <img src="assets/images/brand_sticky_showcase.webp" alt="Digital Flagship Web System" loading="lazy">
+                                <span class="dash-visual-badge mint"><i class="fas fa-laptop-code"></i> Sprint 3 &bull; Live Prototype</span>
+                            </div>
+                            <div class="dash-visual-body">
+                                <div class="dash-visual-tags">
+                                    <span class="dash-visual-tag">Next.js Headless</span>
+                                    <span class="dash-visual-tag">WebGL 3D</span>
+                                    <span class="dash-visual-tag">60 FPS</span>
+                                </div>
+                                <h5 class="dash-visual-title">Digital Flagship Interactive Micro-Store</h5>
+                                <p class="dash-visual-desc">Responsive dynamic grid, fluid product reveal transitions, and custom cart drawer animation system.</p>
+                                <div class="dash-visual-actions">
+                                    <a href="404.html" class="btn btn-accent" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Test Prototype
+                                    </a>
+                                    <a href="404.html" class="btn btn-outline" title="View Figma Sync File">
+                                        <i class="fab fa-figma"></i> Figma File
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash-visual-card">
+                            <div class="dash-visual-thumb">
+                                <img src="assets/images/mockup_stationery.webp" alt="Variable Typography and Stationery" loading="lazy">
+                                <span class="dash-visual-badge success"><i class="fas fa-check-circle"></i> Sprint 2 &bull; Approved</span>
+                            </div>
+                            <div class="dash-visual-body">
+                                <div class="dash-visual-tags">
+                                    <span class="dash-visual-tag">Custom Typeface</span>
+                                    <span class="dash-visual-tag">FSC Paperboard</span>
+                                    <span class="dash-visual-tag">Corporate Identity</span>
+                                </div>
+                                <h5 class="dash-visual-title">Variable Ligature Typeface &amp; Stationery Suite</h5>
+                                <p class="dash-visual-desc">Full commercial stationery mockups with blind deboss business cards, letterheads, and wax seal dielines.</p>
+                                <div class="dash-visual-actions">
+                                    <a href="404.html" class="btn btn-outline">
+                                        <i class="fas fa-download"></i> Specimen Sheet
+                                    </a>
+                                    <a href="404.html" class="btn btn-accent">
+                                        <i class="fas fa-file-archive"></i> Brand Assets
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #ffffff; border-radius: var(--radius-md); padding: 26px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; flex-wrap: wrap; gap: 10px;">
+                        <h4 style="font-size: 1.15rem; color: var(--primary-green); margin: 0;">Recent Asset Deliverables In Vault</h4>
+                        <button type="button" class="btn btn-outline" style="padding: 6px 14px; font-size: 0.8rem; cursor: pointer;" onclick="document.querySelector('[data-tab=assets]').click()">View All Assets &rarr;</button>
+                    </div>
+
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.86rem; text-align: left;">
+                            <thead>
+                                <tr style="border-bottom: 1.5px solid var(--border-subtle); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase;">
+                                    <th style="padding: 10px;">Asset Name</th>
+                                    <th style="padding: 10px;">Format</th>
+                                    <th style="padding: 10px;">Size</th>
+                                    <th style="padding: 10px;">Approved Date</th>
+                                    <th style="padding: 10px; text-align: right;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--border-subtle);">
+                                    <td style="padding: 14px 10px; font-weight: 600; color: var(--primary-green);">
+                                        <i class="fas fa-file-archive" style="color: var(--accent-mint); margin-right: 8px;"></i> Master_Vector_Logomarks_Suite.zip
+                                    </td>
+                                    <td style="padding: 10px;">.AI / .SVG / .EPS</td>
+                                    <td style="padding: 10px;">48.2 MB</td>
+                                    <td style="padding: 10px;">Sept 12, 2026</td>
+                                    <td style="padding: 10px; text-align: right;">
+                                        <a href="404.html" class="btn btn-accent" style="padding: 4px 10px; font-size: 0.75rem;">Download</a>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-subtle);">
+                                    <td style="padding: 14px 10px; font-weight: 600; color: var(--primary-green);">
+                                        <i class="fas fa-file-pdf" style="color: #ef4444; margin-right: 8px;"></i> Brand_Architecture_Style_Guide_v2.pdf
+                                    </td>
+                                    <td style="padding: 10px;">PDF (120 Pages)</td>
+                                    <td style="padding: 10px;">24.5 MB</td>
+                                    <td style="padding: 10px;">Sept 10, 2026</td>
+                                    <td style="padding: 10px; text-align: right;">
+                                        <a href="404.html" class="btn btn-accent" style="padding: 4px 10px; font-size: 0.75rem;">Download</a>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-subtle);">
+                                    <td style="padding: 14px 10px; font-weight: 600; color: var(--primary-green);">
+                                        <i class="fas fa-font" style="color: var(--accent-sandal); margin-right: 8px;"></i> Custom_Variable_Display_Font_Kit.zip
+                                    </td>
+                                    <td style="padding: 10px;">.WOFF2 / .OTF</td>
+                                    <td style="padding: 10px;">8.4 MB</td>
+                                    <td style="padding: 10px;">Sept 06, 2026</td>
+                                    <td style="padding: 10px; text-align: right;">
+                                        <a href="404.html" class="btn btn-accent" style="padding: 4px 10px; font-size: 0.75rem;">Download</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-tab-pane" id="tab-sprints">
+                <div style="margin-bottom: 22px;">
+                    <h3 style="font-size: 1.4rem; color: var(--primary-green); margin-bottom: 4px;">Sprint Roadmap &amp; Milestones</h3>
+                    <p style="font-size: 0.88rem; color: var(--text-muted);">Real-time tracking of your agency design sprints managed by Stackly's Salem studio.</p>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+
+                    <div style="background: #ffffff; border-radius: var(--radius-md); padding: 22px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-mint); background: var(--bg-light-mint); padding: 2px 8px; border-radius: 4px;">COMPLETED</span>
+                            <h4 style="font-size: 1.15rem; color: var(--primary-green); margin: 6px 0;">Sprint 1: Brand Strategy &amp; Competitive White Space</h4>
+                            <p style="font-size: 0.84rem; color: var(--text-muted); margin: 0;">Market positioning matrix, audience personas, and core narrative architecture.</p>
+                        </div>
+                        <span style="font-family: 'JetBrains Mono', monospace; font-weight: 700; color: var(--accent-mint); font-size: 0.9rem;">100%</span>
+                    </div>
+
+                    <div style="background: #ffffff; border-radius: var(--radius-md); padding: 22px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-mint); background: var(--bg-light-mint); padding: 2px 8px; border-radius: 4px;">COMPLETED</span>
+                            <h4 style="font-size: 1.15rem; color: var(--primary-green); margin: 6px 0;">Sprint 2: Vector Logomark &amp; Custom Typography</h4>
+                            <p style="font-size: 0.84rem; color: var(--text-muted); margin: 0;">Proprietary ligature font set, geometric primary logo, and icon library.</p>
+                        </div>
+                        <span style="font-family: 'JetBrains Mono', monospace; font-weight: 700; color: var(--accent-mint); font-size: 0.9rem;">100%</span>
+                    </div>
+
+                    <div style="background: #ffffff; border-radius: var(--radius-md); padding: 22px; border: 1.5px solid var(--accent-mint); display: flex; justify-content: space-between; align-items: center; box-shadow: var(--shadow-sm);">
+                        <div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-sandal-dark); background: rgba(212,163,115,0.15); padding: 2px 8px; border-radius: 4px;">ACTIVE IN PROGRESS</span>
+                            <h4 style="font-size: 1.15rem; color: var(--primary-green); margin: 6px 0;">Sprint 3: Digital Flagship &amp; Web Systems</h4>
+                            <p style="font-size: 0.84rem; color: var(--text-muted); margin: 0;">High-performance headless e-commerce frontend, micro-interactions, and interactive product showcase.</p>
+                        </div>
+                        <span style="font-family: 'JetBrains Mono', monospace; font-weight: 700; color: var(--accent-mint); font-size: 0.9rem;">74%</span>
+                    </div>
+
+                    <div style="background: #ffffff; border-radius: var(--radius-md); padding: 22px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); background: var(--bg-canvas); padding: 2px 8px; border-radius: 4px;">UPCOMING SPRINT</span>
+                            <h4 style="font-size: 1.15rem; color: var(--text-muted); margin: 6px 0;">Sprint 4: Tactile Packaging &amp; Manufacturer Production</h4>
+                            <p style="font-size: 0.84rem; color: var(--text-muted); margin: 0;">Emboss plates, FSC paper substrate proofs, and printer liaison sign-off.</p>
+                        </div>
+                        <span style="font-family: 'JetBrains Mono', monospace; font-weight: 700; color: var(--text-muted); font-size: 0.9rem;">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-tab-pane" id="tab-assets">
+                <div style="margin-bottom: 22px;">
+                    <h3 style="font-size: 1.4rem; color: var(--primary-green); margin-bottom: 4px;">Brand Asset Vault</h3>
+                    <p style="font-size: 0.88rem; color: var(--text-muted);">Direct cloud access to commercial vector files, master brand book PDFs, and licensed typography.</p>
+                </div>
+
+                <div class="responsive-services-grid" style="gap: 20px;">
+
+                    <div class="dash-visual-card">
+                        <div class="dash-visual-thumb" style="height: 160px;">
+                            <img src="assets/images/service_identity.webp" alt="Primary Vector Logo Suite" loading="lazy">
+                            <span class="dash-visual-badge sandal"><i class="fas fa-vector-square"></i> Vector Master</span>
+                        </div>
+                        <div class="dash-visual-body">
+                            <h4 style="font-size: 1.05rem; margin-bottom: 6px; color: var(--primary-green);">Primary Vector Logo Kit</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px;">RGB, CMYK, Pantone 5605 C, and Monochrome vector versions in .SVG, .EPS, and .AI.</p>
+                            <a href="404.html" class="btn btn-outline btn-block" style="padding: 7px; font-size: 0.8rem; text-align: center;">
+                                <i class="fas fa-download"></i> Download .ZIP (48 MB)
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dash-visual-card">
+                        <div class="dash-visual-thumb" style="height: 160px;">
+                            <img src="assets/images/mockup_stationery.webp" alt="Master Brand Book" loading="lazy">
+                            <span class="dash-visual-badge mint"><i class="fas fa-book-open"></i> Style Guide</span>
+                        </div>
+                        <div class="dash-visual-body">
+                            <h4 style="font-size: 1.05rem; margin-bottom: 6px; color: var(--primary-green);">Master Brand Book PDF</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px;">120-page comprehensive guidelines on layout grids, typography, and voice rules.</p>
+                            <a href="404.html" class="btn btn-outline btn-block" style="padding: 7px; font-size: 0.8rem; text-align: center;">
+                                <i class="fas fa-download"></i> Download .PDF (24 MB)
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dash-visual-card">
+                        <div class="dash-visual-thumb" style="height: 160px;">
+                            <img src="assets/images/hero_agency_creative.webp" alt="Motion and Digital Kit" loading="lazy">
+                            <span class="dash-visual-badge success"><i class="fas fa-film"></i> Motion Toolkit</span>
+                        </div>
+                        <div class="dash-visual-body">
+                            <h4 style="font-size: 1.05rem; margin-bottom: 6px; color: var(--primary-green);">Motion &amp; Digital Toolkits</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px;">High-resolution master assets, animated logo stings, and social campaign toolkits.</p>
+                            <a href="404.html" class="btn btn-outline btn-block" style="padding: 7px; font-size: 0.8rem; text-align: center;">
+                                <i class="fas fa-download"></i> Download .ZIP (112 MB)
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dash-visual-card">
+                        <div class="dash-visual-thumb" style="height: 160px;">
+                            <img src="assets/images/service_packaging.webp" alt="Tactile Packaging Specs" loading="lazy">
+                            <span class="dash-visual-badge sandal"><i class="fas fa-box"></i> Print Blueprints</span>
+                        </div>
+                        <div class="dash-visual-body">
+                            <h4 style="font-size: 1.05rem; margin-bottom: 6px; color: var(--primary-green);">Packaging &amp; Dieline Blueprints</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px;">Emboss plate coordinates, 1:1 scale cutter guides, and foil stamping separation layers.</p>
+                            <a href="404.html" class="btn btn-outline btn-block" style="padding: 7px; font-size: 0.8rem; text-align: center;">
+                                <i class="fas fa-download"></i> Download .AI &amp; PDF (36 MB)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-tab-pane" id="tab-approvals">
+                <div style="margin-bottom: 22px;">
+                    <h3 style="font-size: 1.4rem; color: var(--primary-green); margin-bottom: 4px;">Proof Review &amp; Sign-Off Desk</h3>
+                    <p style="font-size: 0.88rem; color: var(--text-muted);">Review pending design deliverables submitted by Stackly's art directors for your sprint sign-off.</p>
+                </div>
+
+                <div class="responsive-split-grid" style="background: #ffffff; border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm); gap: 30px; align-items: center;">
+                    <div>
+                        <span class="section-eyebrow sandal">AWAITING CLIENT APPROVAL</span>
+                        <h3 style="color: var(--primary-green); font-size: 1.3rem; margin: 8px 0;">Cosmetics Glass Jar Emboss Plate Dieline V3</h3>
+                        <p style="font-size: 0.88rem; margin-bottom: 18px;">Updated with 0.4mm tactile raised foil margin requested in revision round 2. Tested for luxury glass bottle adhesion.</p>
+                        <div class="dash-action-group">
+                            <a href="404.html" class="btn btn-accent">
+                                <i class="fas fa-check"></i> Approve Deliverable
+                            </a>
+                            <a href="404.html" class="btn btn-outline">
+                                Request Revision
+                            </a>
+                        </div>
+                    </div>
+                    <div style="border-radius: var(--radius-sm); overflow: hidden; height: 220px; border: 1px solid var(--border-subtle);">
+                        <img src="assets/images/service_packaging.webp" alt="Proof Preview" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-tab-pane" id="tab-billing">
+                <div style="margin-bottom: 22px;">
+                    <h3 style="font-size: 1.4rem; color: var(--primary-green); margin-bottom: 4px;">Retainer &amp; Sprint Invoicing</h3>
+                    <p style="font-size: 0.88rem; color: var(--text-muted);">View enterprise contract terms, milestone invoices, and retainer receipts.</p>
+                </div>
+
+                <div style="background: #ffffff; border-radius: var(--radius-md); padding: 24px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 14px; margin-bottom: 14px;">
+                        <div>
+                            <strong style="font-size: 0.95rem; color: var(--primary-green); display: block;">Invoice #STK-2026-089 &bull; Milestone 2 Clearance</strong>
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">Visual Identity &amp; Variable Typography System Delivery</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <strong style="font-size: 1.1rem; color: var(--primary-green); display: block;">$21,000.00</strong>
+                            <span style="font-size: 0.72rem; color: #10b981; font-weight: 700;">PAID &bull; RECEIPT #8849</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <strong style="font-size: 0.95rem; color: var(--primary-green); display: block;">Invoice #STK-2026-090 &bull; Milestone 3 Clearance</strong>
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">Digital Flagship Frontend &amp; Micro-Interactions</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <strong style="font-size: 1.1rem; color: var(--primary-green); display: block;">$21,000.00</strong>
+                            <span style="font-size: 0.72rem; color: var(--accent-sandal-dark); font-weight: 700;">DUE UPON SPRINT SIGN-OFF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-tab-pane" id="tab-settings">
+                <div style="margin-bottom: 22px;">
+                    <h3 style="font-size: 1.4rem; color: var(--primary-green); margin-bottom: 4px;">Workspace Settings</h3>
+                    <p style="font-size: 0.88rem; color: var(--text-muted);">Manage client company profile and team access.</p>
+                </div>
+
+                <div class="dash-settings-grid">
+
+                    <div style="background: #ffffff; border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+                        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 22px; padding-bottom: 18px; border-bottom: 1px solid var(--border-subtle);">
+                            <div class="dash-user-avatar user-display-avatar" style="width: 58px; height: 58px; font-size: 1.4rem; background: var(--primary-green); flex-shrink: 0;">A</div>
+                            <div>
+                                <strong class="user-display-name" style="font-size: 1.1rem; color: var(--primary-green); display: block;">Arjun Sundaram</strong>
+                                <span class="user-display-email" style="font-size: 0.82rem; color: var(--text-muted); display: block; margin-bottom: 5px;">client@enterprise.com</span>
+                                <span style="font-size: 0.72rem; font-weight: 700; color: #10b981; background: #ecfdf5; border: 1px solid rgba(16,185,129,0.3); padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class="fas fa-check-circle"></i> Enterprise Client Verified
+                                </span>
+                            </div>
+                        </div>
+
+                        <form onsubmit="event.preventDefault(); window.location.href='404.html';">
+                            <div class="form-input-box">
+                                <label style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 6px;">Client Representative</label>
+                                <input type="text" class="form-input user-display-name" value="Arjun Sundaram">
+                            </div>
+                            <div class="form-input-box">
+                                <label style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 6px;">Client Enterprise Organization</label>
+                                <input type="text" class="form-input" value="Veda Living Skincare Pvt Ltd">
+                            </div>
+                            <div class="form-input-box">
+                                <label style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 6px;">Client Primary Email</label>
+                                <input type="email" class="form-input user-display-email" value="client@enterprise.com">
+                            </div>
+                            <div class="form-input-box">
+                                <label style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 6px;">Direct Phone / WhatsApp</label>
+                                <input type="tel" class="form-input" value="+91 98400 12345">
+                            </div>
+
+                            <div style="margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--border-subtle);">
+                                <label style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-dark); margin-bottom: 12px;">Studio Communication Preferences</label>
+                                <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.83rem; color: var(--text-dark); margin-bottom: 22px;">
+                                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                        <input type="checkbox" checked style="accent-color: var(--primary-green); width: 16px; height: 16px;">
+                                        <span>Notify instantly when new sprint proof is published for sign-off</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                        <input type="checkbox" checked style="accent-color: var(--primary-green); width: 16px; height: 16px;">
+                                        <span>Receive Weekly Executive Progress Digest from Art Director</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                        <input type="checkbox" checked style="accent-color: var(--primary-green); width: 16px; height: 16px;">
+                                        <span>SMS / WhatsApp reminder before weekly sprint review call</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="dash-action-group">
+                                <button type="submit" class="btn btn-accent" style="padding: 9px 18px; font-size: 0.85rem;">Save Preferences</button>
+                                <a href="404.html" class="btn btn-outline" style="padding: 9px 18px; font-size: 0.85rem;">Change Password</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                        <div style="background: #ffffff; border-radius: var(--radius-md); padding: 24px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
+                                <span class="section-eyebrow sandal" style="margin-bottom: 0;">ASSIGNED ART DIRECTOR</span>
+                                <span style="font-size: 0.72rem; font-weight: 700; color: var(--accent-mint); background: var(--bg-light-mint); padding: 3px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class="fas fa-circle" style="font-size: 0.5rem;"></i> ONLINE IN SALEM HQ
+                                </span>
+                            </div>
+
+                            <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
+                                <img src="assets/images/director_portrait.webp" alt="Arjun Rathore" style="width: 72px; height: 72px; border-radius: 12px; object-fit: cover; border: 2px solid var(--accent-sandal); flex-shrink: 0; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <h4 style="font-size: 1.1rem; color: var(--primary-green); margin: 0 0 4px;">Arjun Rathore</h4>
+                                    <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-sandal-dark); display: block; margin-bottom: 4px;">
+                                        Chief Creative Officer &amp; Atelier Lead
+                                    </span>
+                                    <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">
+                                        <i class="fas fa-map-marker-alt" style="color: var(--accent-sandal); margin-right: 4px;"></i> Salem HQ Atelier &bull; Chinna Thirupathi
+                                    </span>
+                                </div>
+                            </div>
+
+                            <p style="font-size: 0.83rem; color: var(--text-dark); line-height: 1.5; margin-bottom: 18px;">
+                                Directing your brand identity sprint, packaging dielines, and e-commerce digital architecture. Over 12+ years crafting bespoke visual systems for luxury brands.
+                            </p>
+
+                            <div class="dash-dual-btn-grid">
+                                <a href="404.html" class="btn btn-outline" style="padding: 8px 10px; font-size: 0.78rem; text-align: center; justify-content: center;">
+                                    <i class="fas fa-calendar-alt"></i> Book Sync Call
+                                </a>
+                                <a href="404.html" class="btn btn-accent" style="padding: 8px 10px; font-size: 0.78rem; text-align: center; justify-content: center;">
+                                    <i class="fab fa-slack"></i> Slack Concierge
+                                </a>
+                            </div>
+
+                            <div style="background: var(--bg-canvas); border-radius: var(--radius-sm); padding: 12px; font-size: 0.76rem; color: var(--text-muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px;">
+                                <span>Typical Response Time: <strong>&lt; 4 Hours</strong></span>
+                                <span>Timezone: <strong>IST (UTC+5:30)</strong></span>
+                            </div>
+                        </div>
+
+                        <div style="background: #ffffff; border-radius: var(--radius-md); padding: 22px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+                                <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(16,185,129,0.12); color: #10b981; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div>
+                                    <h5 style="font-size: 0.95rem; color: var(--primary-green); margin: 0 0 2px;">Enterprise Security &amp; IP Protection</h5>
+                                    <span style="font-size: 0.75rem; color: var(--text-muted);">Stackly Atelier Commercial Guarantee</span>
+                                </div>
+                            </div>
+
+                            <div style="font-size: 0.81rem; color: var(--text-dark); display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px;">
+                                <div style="display: flex; align-items: flex-start; gap: 8px;">
+                                    <i class="fas fa-file-contract" style="color: var(--accent-mint); margin-top: 3px;"></i>
+                                    <span><strong>Mutual NDA #STK-NDA-2026-042</strong> active &bull; Valid through Oct 2027</span>
+                                </div>
+                                <div style="display: flex; align-items: flex-start; gap: 8px;">
+                                    <i class="fas fa-lock" style="color: var(--accent-sandal); margin-top: 3px;"></i>
+                                    <span><strong>256-Bit AES Vault Encryption</strong> on all master vector source files</span>
+                                </div>
+                                <div style="display: flex; align-items: flex-start; gap: 8px;">
+                                    <i class="fas fa-certificate" style="color: #10b981; margin-top: 3px;"></i>
+                                    <span><strong>100% Commercial IP Rights</strong> transferred upon final sprint sign-off</span>
+                                </div>
+                            </div>
+
+                            <a href="404.html" style="font-size: 0.78rem; color: var(--primary-green); font-weight: 700; text-decoration: underline; display: inline-flex; align-items: center; gap: 5px;">
+                                View Signed Master Services Agreement (PDF) &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <div class="success-modal-backdrop" id="logoutModal">
+        <div class="success-modal-card">
+            <div class="success-icon-circle" style="color: #ef4444; background: #fef2f2;">
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+            <h3 style="color: var(--primary-green); font-size: 1.4rem; margin-bottom: 8px;">Confirm Session Logout?</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">
+                You are about to securely exit the client portal. Your session data and downloads are safe.
+            </p>
+            <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                <button type="button" class="btn btn-outline" id="cancelLogoutBtn">Cancel</button>
+                <button type="button" class="btn btn-primary" id="confirmLogoutBtn">Yes, Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
