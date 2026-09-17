@@ -13,6 +13,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background: var(--bg-canvas); min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
+    <div class="stackly-preloader" id="stacklyPreloader">
+        <div class="preloader-brand">
+            <img src="assets/logo.webp" alt="Stackly Studio">
+        </div>
+        <div class="preloader-bar-wrap">
+            <div class="preloader-bar-fill" id="preloaderFill"></div>
+        </div>
+        <div class="preloader-meta">
+            <span>SYNCHRONIZING CANVAS</span>
+            <span id="preloaderCounter">0%</span>
+        </div>
+    </div>
 
     <header style="padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); background: #ffffff;">
         <a href="index.html" class="brand-logo">
